@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  ProjectDemo
+//
+//  Created by orilme on 2017/4/1.
+//  Copyright © 2017年 orilme. All rights reserved.
+//
+
+//创建pch文件步骤
+//1.创建pch文件
+//2.Project > Build Settings > 搜索 “Prefix Header“；
+//3.Prefix Header下添加pch文件的路径
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//引入Masonry两个宏 便于写布局代码
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+#import "AppDelegate.h"
+
+#import <DDLog.h>
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
+
+//常量文件
+#import "Constants.h"
+#import "NotificationContants.h"
+#import "TargetConfigContants.h"//日志的常量文件
+
+//宏文件
+#import "Macros.h"
+#import "ThirdMacros.h"
+#import "TargetConfigMacros.h"//日志的宏文件
+
+#import "GVUserDefaults+BBProperties.h"//引导页用
+
+
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MP.h"
+
+#endif /* PrefixHeader_pch */
