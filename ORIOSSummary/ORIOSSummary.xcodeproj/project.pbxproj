@@ -21,10 +21,10 @@
 		411CE7F22248A5AE003D0DEA /* CoreMotionExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE7E02248A5AD003D0DEA /* CoreMotionExampleVC.m */; };
 		411CE7F32248A5AE003D0DEA /* CoreMotionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE7E22248A5AD003D0DEA /* CoreMotionVC.m */; };
 		411CE7F42248A5AE003D0DEA /* AddressBookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE7E32248A5AD003D0DEA /* AddressBookVC.m */; };
-		411CE8022248AD9A003D0DEA /* GCDBarrierVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE7FA2248AD9A003D0DEA /* GCDBarrierVC.m */; };
-		411CE8032248AD9A003D0DEA /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE7FC2248AD9A003D0DEA /* GCDVC.m */; };
-		411CE8042248AD9A003D0DEA /* NSThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE7FD2248AD9A003D0DEA /* NSThreadVC.m */; };
-		411CE8052248AD9A003D0DEA /* NSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE7FF2248AD9A003D0DEA /* NSOperationVC.m */; };
+		411CE80F2248B43D003D0DEA /* GCDBarrierVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE8072248B43D003D0DEA /* GCDBarrierVC.m */; };
+		411CE8102248B43D003D0DEA /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE8092248B43D003D0DEA /* GCDVC.m */; };
+		411CE8112248B43D003D0DEA /* NSThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE80A2248B43D003D0DEA /* NSThreadVC.m */; };
+		411CE8122248B43D003D0DEA /* NSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE80C2248B43D003D0DEA /* NSOperationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,14 +73,14 @@
 		411CE7E22248A5AD003D0DEA /* CoreMotionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreMotionVC.m; sourceTree = "<group>"; };
 		411CE7E32248A5AD003D0DEA /* AddressBookVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookVC.m; sourceTree = "<group>"; };
 		411CE7E42248A5AD003D0DEA /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		411CE7FA2248AD9A003D0DEA /* GCDBarrierVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDBarrierVC.m; sourceTree = "<group>"; };
-		411CE7FB2248AD9A003D0DEA /* NSOperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationVC.h; sourceTree = "<group>"; };
-		411CE7FC2248AD9A003D0DEA /* GCDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDVC.m; sourceTree = "<group>"; };
-		411CE7FD2248AD9A003D0DEA /* NSThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadVC.m; sourceTree = "<group>"; };
-		411CE7FE2248AD9A003D0DEA /* GCDBarrierVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDBarrierVC.h; sourceTree = "<group>"; };
-		411CE7FF2248AD9A003D0DEA /* NSOperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationVC.m; sourceTree = "<group>"; };
-		411CE8002248AD9A003D0DEA /* GCDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDVC.h; sourceTree = "<group>"; };
-		411CE8012248AD9A003D0DEA /* NSThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadVC.h; sourceTree = "<group>"; };
+		411CE8072248B43D003D0DEA /* GCDBarrierVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDBarrierVC.m; sourceTree = "<group>"; };
+		411CE8082248B43D003D0DEA /* NSOperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationVC.h; sourceTree = "<group>"; };
+		411CE8092248B43D003D0DEA /* GCDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDVC.m; sourceTree = "<group>"; };
+		411CE80A2248B43D003D0DEA /* NSThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadVC.m; sourceTree = "<group>"; };
+		411CE80B2248B43D003D0DEA /* GCDBarrierVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDBarrierVC.h; sourceTree = "<group>"; };
+		411CE80C2248B43D003D0DEA /* NSOperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationVC.m; sourceTree = "<group>"; };
+		411CE80D2248B43D003D0DEA /* GCDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDVC.h; sourceTree = "<group>"; };
+		411CE80E2248B43D003D0DEA /* NSThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 				411CE7E32248A5AD003D0DEA /* AddressBookVC.m */,
 				411CE7DF2248A5AD003D0DEA /* AddressBookUIVC.h */,
 				411CE7DA2248A5AD003D0DEA /* AddressBookUIVC.m */,
-				411CE7F92248AD9A003D0DEA /* Multithreading */,
+				411CE8062248B43D003D0DEA /* Multithreading */,
 				411CE7AB2248A591003D0DEA /* Main.storyboard */,
 				411CE7AE2248A593003D0DEA /* Assets.xcassets */,
 				411CE7B02248A593003D0DEA /* LaunchScreen.storyboard */,
@@ -175,17 +175,17 @@
 			path = ORIOSSummaryUITests;
 			sourceTree = "<group>";
 		};
-		411CE7F92248AD9A003D0DEA /* Multithreading */ = {
+		411CE8062248B43D003D0DEA /* Multithreading */ = {
 			isa = PBXGroup;
 			children = (
-				411CE8002248AD9A003D0DEA /* GCDVC.h */,
-				411CE7FC2248AD9A003D0DEA /* GCDVC.m */,
-				411CE7FE2248AD9A003D0DEA /* GCDBarrierVC.h */,
-				411CE7FA2248AD9A003D0DEA /* GCDBarrierVC.m */,
-				411CE7FB2248AD9A003D0DEA /* NSOperationVC.h */,
-				411CE7FF2248AD9A003D0DEA /* NSOperationVC.m */,
-				411CE8012248AD9A003D0DEA /* NSThreadVC.h */,
-				411CE7FD2248AD9A003D0DEA /* NSThreadVC.m */,
+				411CE80D2248B43D003D0DEA /* GCDVC.h */,
+				411CE8092248B43D003D0DEA /* GCDVC.m */,
+				411CE80B2248B43D003D0DEA /* GCDBarrierVC.h */,
+				411CE8072248B43D003D0DEA /* GCDBarrierVC.m */,
+				411CE8082248B43D003D0DEA /* NSOperationVC.h */,
+				411CE80C2248B43D003D0DEA /* NSOperationVC.m */,
+				411CE80E2248B43D003D0DEA /* NSThreadVC.h */,
+				411CE80A2248B43D003D0DEA /* NSThreadVC.m */,
 			);
 			path = Multithreading;
 			sourceTree = "<group>";
@@ -321,18 +321,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				411CE7F32248A5AE003D0DEA /* CoreMotionVC.m in Sources */,
-				411CE8042248AD9A003D0DEA /* NSThreadVC.m in Sources */,
+				411CE8112248B43D003D0DEA /* NSThreadVC.m in Sources */,
 				411CE7F42248A5AE003D0DEA /* AddressBookVC.m in Sources */,
 				411CE7B52248A593003D0DEA /* main.m in Sources */,
 				411CE7EF2248A5AE003D0DEA /* AddressBookUIVC.m in Sources */,
 				411CE7F12248A5AE003D0DEA /* ORMotionManager.m in Sources */,
-				411CE8032248AD9A003D0DEA /* GCDVC.m in Sources */,
+				411CE8102248B43D003D0DEA /* GCDVC.m in Sources */,
 				411CE7F22248A5AE003D0DEA /* CoreMotionExampleVC.m in Sources */,
 				411CE7A72248A591003D0DEA /* AppDelegate.m in Sources */,
 				411CE7EE2248A5AE003D0DEA /* MenuViewController.m in Sources */,
 				411CE7F02248A5AE003D0DEA /* ProximityMonitorVC.m in Sources */,
-				411CE8022248AD9A003D0DEA /* GCDBarrierVC.m in Sources */,
-				411CE8052248AD9A003D0DEA /* NSOperationVC.m in Sources */,
+				411CE80F2248B43D003D0DEA /* GCDBarrierVC.m in Sources */,
+				411CE8122248B43D003D0DEA /* NSOperationVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
