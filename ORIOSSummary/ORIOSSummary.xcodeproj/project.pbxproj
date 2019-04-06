@@ -25,6 +25,15 @@
 		411CE8102248B43D003D0DEA /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE8092248B43D003D0DEA /* GCDVC.m */; };
 		411CE8112248B43D003D0DEA /* NSThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE80A2248B43D003D0DEA /* NSThreadVC.m */; };
 		411CE8122248B43D003D0DEA /* NSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE80C2248B43D003D0DEA /* NSOperationVC.m */; };
+		411CE896224A1881003D0DEA /* SequenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE895224A1881003D0DEA /* SequenceVC.m */; };
+		411CE899224A321B003D0DEA /* RecursiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411CE898224A321B003D0DEA /* RecursiveVC.m */; };
+		413956AD225874B2000DD7C3 /* SDWebImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 413956AC225874B2000DD7C3 /* SDWebImageVC.m */; };
+		413956B02258AD01000DD7C3 /* SDWebImageSimulateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 413956AF2258AD01000DD7C3 /* SDWebImageSimulateVC.m */; };
+		413956B32258AD88000DD7C3 /* SDWebImageSimulateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 413956B22258AD88000DD7C3 /* SDWebImageSimulateModel.m */; };
+		413956B62258AE17000DD7C3 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 413956B52258AE17000DD7C3 /* apps.plist */; };
+		913889EC2F40AC66DEFBF76A /* libPods-ORIOSSummaryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28ED7135B0F46BF6A0BF14B8 /* libPods-ORIOSSummaryUITests.a */; };
+		DFDBC9A67E328014D691B4BD /* libPods-ORIOSSummaryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52ACE5D8B33F00003D999BF5 /* libPods-ORIOSSummaryTests.a */; };
+		FB7728E0B1B8A1420C0A6787 /* libPods-ORIOSSummary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B03B510587CD8F3DE521AC /* libPods-ORIOSSummary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03B03B510587CD8F3DE521AC /* libPods-ORIOSSummary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ORIOSSummary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28ED7135B0F46BF6A0BF14B8 /* libPods-ORIOSSummaryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ORIOSSummaryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		411CE7A22248A591003D0DEA /* ORIOSSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORIOSSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411CE7A52248A591003D0DEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		411CE7A62248A591003D0DEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +92,24 @@
 		411CE80C2248B43D003D0DEA /* NSOperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationVC.m; sourceTree = "<group>"; };
 		411CE80D2248B43D003D0DEA /* GCDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDVC.h; sourceTree = "<group>"; };
 		411CE80E2248B43D003D0DEA /* NSThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadVC.h; sourceTree = "<group>"; };
+		411CE894224A1881003D0DEA /* SequenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SequenceVC.h; sourceTree = "<group>"; };
+		411CE895224A1881003D0DEA /* SequenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SequenceVC.m; sourceTree = "<group>"; };
+		411CE897224A321B003D0DEA /* RecursiveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecursiveVC.h; sourceTree = "<group>"; };
+		411CE898224A321B003D0DEA /* RecursiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecursiveVC.m; sourceTree = "<group>"; };
+		413956AB225874B2000DD7C3 /* SDWebImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageVC.h; sourceTree = "<group>"; };
+		413956AC225874B2000DD7C3 /* SDWebImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageVC.m; sourceTree = "<group>"; };
+		413956AE2258AD01000DD7C3 /* SDWebImageSimulateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageSimulateVC.h; sourceTree = "<group>"; };
+		413956AF2258AD01000DD7C3 /* SDWebImageSimulateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageSimulateVC.m; sourceTree = "<group>"; };
+		413956B12258AD88000DD7C3 /* SDWebImageSimulateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageSimulateModel.h; sourceTree = "<group>"; };
+		413956B22258AD88000DD7C3 /* SDWebImageSimulateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageSimulateModel.m; sourceTree = "<group>"; };
+		413956B52258AE17000DD7C3 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		52ACE5D8B33F00003D999BF5 /* libPods-ORIOSSummaryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ORIOSSummaryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF07122718400A7A9CCDC92 /* Pods-ORIOSSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORIOSSummary.release.xcconfig"; path = "Pods/Target Support Files/Pods-ORIOSSummary/Pods-ORIOSSummary.release.xcconfig"; sourceTree = "<group>"; };
+		83B2D9BBC4585BF31E31FF7C /* Pods-ORIOSSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORIOSSummary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORIOSSummary/Pods-ORIOSSummary.debug.xcconfig"; sourceTree = "<group>"; };
+		90852445BD5BAF4162930B5E /* Pods-ORIOSSummaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORIOSSummaryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORIOSSummaryUITests/Pods-ORIOSSummaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A29D7BBC0BD7657DBF7751 /* Pods-ORIOSSummaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORIOSSummaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ORIOSSummaryTests/Pods-ORIOSSummaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D905CBF2E4F03DEE946AEBC4 /* Pods-ORIOSSummaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORIOSSummaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ORIOSSummaryTests/Pods-ORIOSSummaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		E95E74FFC4A5AABA7FB432E2 /* Pods-ORIOSSummaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORIOSSummaryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ORIOSSummaryUITests/Pods-ORIOSSummaryUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7728E0B1B8A1420C0A6787 /* libPods-ORIOSSummary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFDBC9A67E328014D691B4BD /* libPods-ORIOSSummaryTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +133,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				913889EC2F40AC66DEFBF76A /* libPods-ORIOSSummaryUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E9BB2AB016688EF36EAF4DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B03B510587CD8F3DE521AC /* libPods-ORIOSSummary.a */,
+				52ACE5D8B33F00003D999BF5 /* libPods-ORIOSSummaryTests.a */,
+				28ED7135B0F46BF6A0BF14B8 /* libPods-ORIOSSummaryUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		411CE7992248A591003D0DEA = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +157,8 @@
 				411CE7BD2248A593003D0DEA /* ORIOSSummaryTests */,
 				411CE7C82248A593003D0DEA /* ORIOSSummaryUITests */,
 				411CE7A32248A591003D0DEA /* Products */,
+				630AACE7D82D90B8D25067C0 /* Pods */,
+				1E9BB2AB016688EF36EAF4DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +192,9 @@
 				411CE7DF2248A5AD003D0DEA /* AddressBookUIVC.h */,
 				411CE7DA2248A5AD003D0DEA /* AddressBookUIVC.m */,
 				411CE8062248B43D003D0DEA /* Multithreading */,
+				411CE893224A1847003D0DEA /*  Algorithm */,
+				413956AA22587485000DD7C3 /* VenderExplore */,
+				413956B42258AE05000DD7C3 /* Resource */,
 				411CE7AB2248A591003D0DEA /* Main.storyboard */,
 				411CE7AE2248A593003D0DEA /* Assets.xcassets */,
 				411CE7B02248A593003D0DEA /* LaunchScreen.storyboard */,
@@ -190,6 +237,51 @@
 			path = Multithreading;
 			sourceTree = "<group>";
 		};
+		411CE893224A1847003D0DEA /*  Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				411CE894224A1881003D0DEA /* SequenceVC.h */,
+				411CE895224A1881003D0DEA /* SequenceVC.m */,
+				411CE897224A321B003D0DEA /* RecursiveVC.h */,
+				411CE898224A321B003D0DEA /* RecursiveVC.m */,
+			);
+			path = " Algorithm";
+			sourceTree = "<group>";
+		};
+		413956AA22587485000DD7C3 /* VenderExplore */ = {
+			isa = PBXGroup;
+			children = (
+				413956AB225874B2000DD7C3 /* SDWebImageVC.h */,
+				413956AC225874B2000DD7C3 /* SDWebImageVC.m */,
+				413956AE2258AD01000DD7C3 /* SDWebImageSimulateVC.h */,
+				413956AF2258AD01000DD7C3 /* SDWebImageSimulateVC.m */,
+				413956B12258AD88000DD7C3 /* SDWebImageSimulateModel.h */,
+				413956B22258AD88000DD7C3 /* SDWebImageSimulateModel.m */,
+			);
+			path = VenderExplore;
+			sourceTree = "<group>";
+		};
+		413956B42258AE05000DD7C3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				413956B52258AE17000DD7C3 /* apps.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		630AACE7D82D90B8D25067C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83B2D9BBC4585BF31E31FF7C /* Pods-ORIOSSummary.debug.xcconfig */,
+				6FF07122718400A7A9CCDC92 /* Pods-ORIOSSummary.release.xcconfig */,
+				B9A29D7BBC0BD7657DBF7751 /* Pods-ORIOSSummaryTests.debug.xcconfig */,
+				D905CBF2E4F03DEE946AEBC4 /* Pods-ORIOSSummaryTests.release.xcconfig */,
+				90852445BD5BAF4162930B5E /* Pods-ORIOSSummaryUITests.debug.xcconfig */,
+				E95E74FFC4A5AABA7FB432E2 /* Pods-ORIOSSummaryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 411CE7CE2248A593003D0DEA /* Build configuration list for PBXNativeTarget "ORIOSSummary" */;
 			buildPhases = (
+				A5A96740F1B5019C64195F2B /* [CP] Check Pods Manifest.lock */,
 				411CE79E2248A591003D0DEA /* Sources */,
 				411CE79F2248A591003D0DEA /* Frameworks */,
 				411CE7A02248A591003D0DEA /* Resources */,
+				3E024A9D16ACE5581DC0775C /* [CP] Embed Pods Frameworks */,
+				B3882832804335B8D949788D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,9 +309,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 411CE7D12248A593003D0DEA /* Build configuration list for PBXNativeTarget "ORIOSSummaryTests" */;
 			buildPhases = (
+				D39786094913554D06417297 /* [CP] Check Pods Manifest.lock */,
 				411CE7B62248A593003D0DEA /* Sources */,
 				411CE7B72248A593003D0DEA /* Frameworks */,
 				411CE7B82248A593003D0DEA /* Resources */,
+				AE3BEF327B7FA7357EDB3176 /* [CP] Embed Pods Frameworks */,
+				60C0D8A9C8911A4C5E15D526 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +330,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 411CE7D42248A593003D0DEA /* Build configuration list for PBXNativeTarget "ORIOSSummaryUITests" */;
 			buildPhases = (
+				F552CBF987BB0DB9DD1A3C44 /* [CP] Check Pods Manifest.lock */,
 				411CE7C12248A593003D0DEA /* Sources */,
 				411CE7C22248A593003D0DEA /* Frameworks */,
 				411CE7C32248A593003D0DEA /* Resources */,
+				A75A6F6474EDFDE30969A493 /* [CP] Embed Pods Frameworks */,
+				C2280F94D942DB650491F59D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413956B62258AE17000DD7C3 /* apps.plist in Resources */,
 				411CE7B22248A593003D0DEA /* LaunchScreen.storyboard in Resources */,
 				411CE7AF2248A593003D0DEA /* Assets.xcassets in Resources */,
 				411CE7AD2248A591003D0DEA /* Main.storyboard in Resources */,
@@ -315,6 +417,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E024A9D16ACE5581DC0775C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ORIOSSummary/Pods-ORIOSSummary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60C0D8A9C8911A4C5E15D526 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ORIOSSummaryTests/Pods-ORIOSSummaryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5A96740F1B5019C64195F2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ORIOSSummary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A75A6F6474EDFDE30969A493 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ORIOSSummaryUITests/Pods-ORIOSSummaryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3BEF327B7FA7357EDB3176 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ORIOSSummaryTests/Pods-ORIOSSummaryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3882832804335B8D949788D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ORIOSSummary/Pods-ORIOSSummary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2280F94D942DB650491F59D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ORIOSSummaryUITests/Pods-ORIOSSummaryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D39786094913554D06417297 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ORIOSSummaryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F552CBF987BB0DB9DD1A3C44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ORIOSSummaryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		411CE79E2248A591003D0DEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -323,14 +572,19 @@
 				411CE7F32248A5AE003D0DEA /* CoreMotionVC.m in Sources */,
 				411CE8112248B43D003D0DEA /* NSThreadVC.m in Sources */,
 				411CE7F42248A5AE003D0DEA /* AddressBookVC.m in Sources */,
+				413956B32258AD88000DD7C3 /* SDWebImageSimulateModel.m in Sources */,
 				411CE7B52248A593003D0DEA /* main.m in Sources */,
 				411CE7EF2248A5AE003D0DEA /* AddressBookUIVC.m in Sources */,
+				411CE896224A1881003D0DEA /* SequenceVC.m in Sources */,
 				411CE7F12248A5AE003D0DEA /* ORMotionManager.m in Sources */,
+				413956B02258AD01000DD7C3 /* SDWebImageSimulateVC.m in Sources */,
 				411CE8102248B43D003D0DEA /* GCDVC.m in Sources */,
 				411CE7F22248A5AE003D0DEA /* CoreMotionExampleVC.m in Sources */,
 				411CE7A72248A591003D0DEA /* AppDelegate.m in Sources */,
+				413956AD225874B2000DD7C3 /* SDWebImageVC.m in Sources */,
 				411CE7EE2248A5AE003D0DEA /* MenuViewController.m in Sources */,
 				411CE7F02248A5AE003D0DEA /* ProximityMonitorVC.m in Sources */,
+				411CE899224A321B003D0DEA /* RecursiveVC.m in Sources */,
 				411CE80F2248B43D003D0DEA /* GCDBarrierVC.m in Sources */,
 				411CE8122248B43D003D0DEA /* NSOperationVC.m in Sources */,
 			);
@@ -501,6 +755,7 @@
 		};
 		411CE7CF2248A593003D0DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B2D9BBC4585BF31E31FF7C /* Pods-ORIOSSummary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +772,7 @@
 		};
 		411CE7D02248A593003D0DEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF07122718400A7A9CCDC92 /* Pods-ORIOSSummary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,6 +789,7 @@
 		};
 		411CE7D22248A593003D0DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A29D7BBC0BD7657DBF7751 /* Pods-ORIOSSummaryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +808,7 @@
 		};
 		411CE7D32248A593003D0DEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D905CBF2E4F03DEE946AEBC4 /* Pods-ORIOSSummaryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -569,6 +827,7 @@
 		};
 		411CE7D52248A593003D0DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90852445BD5BAF4162930B5E /* Pods-ORIOSSummaryUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ORIOSSummaryUITests/Info.plist;
@@ -586,6 +845,7 @@
 		};
 		411CE7D62248A593003D0DEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95E74FFC4A5AABA7FB432E2 /* Pods-ORIOSSummaryUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ORIOSSummaryUITests/Info.plist;

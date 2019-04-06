@@ -20,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view
-    self.meunVCArr = @[@"CoreMotionVC", @"ProximityMonitorVC", @"CoreMotionExampleVC", @"AddressBookUIVC", @"AddressBookVC", @"GCDVC", @"GCDBarrierVC", @"NSOperationVC", @"NSThreadVC"];
-    self.meunTitleArr = @[@"CoreMotion(陀螺仪、陀螺仪、加速剂)", @"距离传感器、摇一摇", @"加速计举例", @"通讯录有UI", @"通讯录无UI", @"GCD", @"GCDBarrier", @"NSOperation", @"NSThread"];
+    self.meunVCArr = @[@"CoreMotionVC", @"ProximityMonitorVC", @"CoreMotionExampleVC", @"AddressBookUIVC", @"AddressBookVC", @"GCDVC", @"GCDBarrierVC", @"NSOperationVC", @"NSThreadVC", @"SequenceVC", @"RecursiveVC", @"SDWebImageVC", @"SDWebImageSimulateVC"];
+    self.meunTitleArr = @[@"CoreMotion(陀螺仪、陀螺仪、加速剂)", @"距离传感器、摇一摇", @"加速计举例", @"通讯录有UI", @"通讯录无UI", @"GCD", @"GCDBarrier", @"NSOperation", @"NSThread", @"算法-排序(冒泡、选择、插入、快速、二分查找)", @"算法-递归", @"SDWebImage探索", @"模拟SDWebImage"];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
 }
