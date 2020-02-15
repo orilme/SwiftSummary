@@ -6,6 +6,9 @@ target 'ORIOSSummary' do
   # use_frameworks!
 
     pod 'SDWebImage', '~> 4.4.6'
+    pod 'CYLTabBarController'
+    pod 'MJRefresh'
+    pod 'MBProgressHUD', '~> 0.9'
     
   # Pods for ORIOSSummary
 

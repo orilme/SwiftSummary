@@ -1,14 +1,33 @@
 PODS:
+  - CYLTabBarController (1.28.3):
+    - CYLTabBarController/Core (= 1.28.3)
+  - CYLTabBarController/Core (1.28.3)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.2.2)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
 
 DEPENDENCIES:
-  - SDWebImage
+  - CYLTabBarController
+  - MBProgressHUD (~> 0.9)
+  - MJRefresh
+  - SDWebImage (~> 4.4.6)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CYLTabBarController
+    - MJRefresh
+    - SDWebImage
+  trunk:
+    - MBProgressHUD
 
 SPEC CHECKSUMS:
+  CYLTabBarController: cd14c6260a38337600737873a57b3114c7065a8e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 
-PODFILE CHECKSUM: 02bab3f57582874a44ceeb46418adad405288675
+PODFILE CHECKSUM: a91d0d49b872976c37feeee4b9a950ef52b4bc83
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.8.4
