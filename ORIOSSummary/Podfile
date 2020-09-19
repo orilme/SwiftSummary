@@ -9,7 +9,7 @@ target 'ORIOSSummary' do
   source 'https://github.com/orilme/ORSpec.git'
 
   
-  pod 'ORModules', '~> 0.0.4'
+  pod 'ORModules', '~> 0.0.5'
   
   pod 'AFNetworking', '~> 4.0.1'
   pod 'MBProgressHUD', '~> 1.2.0'
