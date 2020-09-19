@@ -301,7 +301,7 @@
 - (NSInteger)dichotomySearch:(NSArray *)array target:(id)key {
     NSInteger left = 0;
     NSInteger right = [array count] - 1;
-    NSInteger middle = [array count] / 2;
+    NSInteger middle;
     
     while (right >= left) {
         middle = (right + left) / 2;

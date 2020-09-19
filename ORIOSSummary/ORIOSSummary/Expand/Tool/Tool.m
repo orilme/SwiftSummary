@@ -137,12 +137,12 @@
 //        
 //        if ([nav.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
 //            
-//            [nav.navigationBar setBackgroundImage:[Tool imageWithColor:[Tool colorWithHexString:@"0086e1"] size:CGSizeMake(Main_Screen_Width, 64)] forBarMetrics:UIBarMetricsDefault];
+//            [nav.navigationBar setBackgroundImage:[Tool imageWithColor:[Tool colorWithHexString:@"0086e1"] size:CGSizeMake(Screen_Width, 64)] forBarMetrics:UIBarMetricsDefault];
 //        }
 //    }
 //    else
 //    {
-//        [nav.navigationBar insertSubview:[[UIImageView alloc] initWithImage:[Tool imageWithColor:[Tool colorWithHexString:@"0086e1"] size:CGSizeMake(Main_Screen_Width, 64)]] atIndex:1];
+//        [nav.navigationBar insertSubview:[[UIImageView alloc] initWithImage:[Tool imageWithColor:[Tool colorWithHexString:@"0086e1"] size:CGSizeMake(Screen_Width, 64)]] atIndex:1];
 //    }
 //    
 //}
@@ -158,12 +158,12 @@
 //        
 //        if ([nav.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
 //            
-//            [nav.navigationBar setBackgroundImage:[Tool imageWithColor:[Tool colorWithHexString:@"23599d"] size:CGSizeMake(Main_Screen_Width, 64)] forBarMetrics:UIBarMetricsDefault];
+//            [nav.navigationBar setBackgroundImage:[Tool imageWithColor:[Tool colorWithHexString:@"23599d"] size:CGSizeMake(Screen_Width, 64)] forBarMetrics:UIBarMetricsDefault];
 //        }
 //    }
 //    else
 //    {
-//        [nav.navigationBar insertSubview:[[UIImageView alloc] initWithImage:[Tool imageWithColor:[Tool colorWithHexString:@"23599d"] size:CGSizeMake(Main_Screen_Width, 64)]] atIndex:1];
+//        [nav.navigationBar insertSubview:[[UIImageView alloc] initWithImage:[Tool imageWithColor:[Tool colorWithHexString:@"23599d"] size:CGSizeMake(Screen_Width, 64)]] atIndex:1];
 //    }
 //    
 //}
@@ -193,7 +193,7 @@
 //    [UIView animateWithDuration:duration.doubleValue animations:^{
 //        [UIView setAnimationBeginsFromCurrentState:YES];
 //        [UIView setAnimationCurve:[curve intValue]];
-//        [ctrl.view setCenter:CGPointMake(Main_Screen_Width / 2, Main_Screen_HEIGHT / 2 - height)];
+//        [ctrl.view setCenter:CGPointMake(Screen_Width / 2, Screen_Height / 2 - height)];
 //    }];
 //}
 //
@@ -205,7 +205,7 @@
 //    [UIView animateWithDuration:duration.doubleValue animations:^{
 //        [UIView setAnimationBeginsFromCurrentState:YES];
 //        [UIView setAnimationCurve:[curve intValue]];
-//        [ctrl.view setCenter:CGPointMake(Main_Screen_Width / 2, Main_Screen_HEIGHT / 2 + 32)];
+//        [ctrl.view setCenter:CGPointMake(Screen_Width / 2, Screen_Height / 2 + 32)];
 //    }];
 //}
 //
@@ -590,22 +590,22 @@
 //+ (CGRect)MDCGRectMakeOrginX:(CGFloat)OrginX OrginY:(CGFloat)OrginY SizeWidth:(CGFloat)SizeWidth SizeHeight:(CGFloat)SizeHeight
 //{
 //    CGRect rect;
-//    rect.origin.x = (OrginX / 360) * Main_Screen_Width; rect.origin.y = (OrginY / 640) * Main_Screen_HEIGHT;
-//    rect.size.width = (SizeWidth / 360) * Main_Screen_Width; rect.size.height = (SizeHeight / 640) * Main_Screen_HEIGHT;
+//    rect.origin.x = (OrginX / 360) * Screen_Width; rect.origin.y = (OrginY / 640) * Screen_Height;
+//    rect.size.width = (SizeWidth / 360) * Screen_Width; rect.size.height = (SizeHeight / 640) * Screen_Height;
 //    return rect;
 //}
 //
 //+ (CGFloat)MDOrginX:(CGFloat)OrginX{
-//    return (OrginX / 360) * Main_Screen_Width;
+//    return (OrginX / 360) * Screen_Width;
 //}
 //+ (CGFloat)MDOrginY:(CGFloat)OrginY{
-//    return (OrginY / 640) * Main_Screen_HEIGHT;
+//    return (OrginY / 640) * Screen_Height;
 //}
 //+ (CGFloat)MDSizeWidth:(CGFloat)SizeWidth{
-//    return (SizeWidth / 360) * Main_Screen_Width;
+//    return (SizeWidth / 360) * Screen_Width;
 //}
 //+ (CGFloat)MDSizeHeight:(CGFloat)SizeHeight{
-//    return (SizeHeight / 640) * Main_Screen_HEIGHT;
+//    return (SizeHeight / 640) * Screen_Height;
 //}
 //
 ////截屏
@@ -619,7 +619,7 @@
 //    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
 //    UIGraphicsEndImageContext();
 //    
-//    UIImage * newImg = [self imageFromImage:img inRect:CGRectMake(0, 64, Main_Screen_Width, Main_Screen_HEIGHT)];
+//    UIImage * newImg = [self imageFromImage:img inRect:CGRectMake(0, 64, Screen_Width, Screen_Height)];
 //    
 //    UIImageWriteToSavedPhotosAlbum(newImg, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 //    

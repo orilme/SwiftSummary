@@ -118,8 +118,6 @@
     UIGraphicsEndImageContext();
     
     return bgImage;
-    
-    
 }
 
 @end

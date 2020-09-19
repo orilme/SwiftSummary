@@ -23,14 +23,15 @@
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {
+    NSLog(@"resolveInstanceMethod----");
     return YES; // 返回YES，进入下一步转发
 }
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
+    NSLog(@"forwardingTargetForSelector----");
     if (aSelector == @selector(runtimeMessageTest)) {
         return [RuntimeExploreInfo new]; // 返回RuntimeExploreInfo对象，让RuntimeExploreInfon对象接收这个消息
     }
-    
     return [super forwardingTargetForSelector:aSelector];
 }
 

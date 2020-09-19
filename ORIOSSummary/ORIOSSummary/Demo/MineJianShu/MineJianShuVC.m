@@ -52,7 +52,8 @@ const CGFloat sectionBarH = 46;
     BOOL _isUp;
 }
 
--(void)viewDidLoad{
+- (void)viewDidLoad {
+    [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"";
     
@@ -61,15 +62,14 @@ const CGFloat sectionBarH = 46;
     [self createHeaderView];
     
     [self createUserHead];
-
 }
 
 #pragma mark 创建上方头视图
 -(void)createHeaderView{
     CGFloat margin = 80;
-    CGFloat labelW = Main_Screen_Width - 2*margin;
+    CGFloat labelW = Screen_Width - 2*margin;
     
-    _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 246)];
+    _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, Screen_Width, 246)];
     _headerView.backgroundColor = RGBA(252, 252, 252, 1);
     _yOffset = _headerView.centerY;
     //昵称
@@ -120,33 +120,33 @@ const CGFloat sectionBarH = 46;
 -(void)createTableScrollView{
     CGFloat tableScrollX = 0;
     CGFloat tableScrollY = 0;
-    CGFloat tableScrollWidth = Main_Screen_Width;
-    CGFloat tableScrollHeight = Main_Screen_Height - navH;
+    CGFloat tableScrollWidth = Screen_Width;
+    CGFloat tableScrollHeight = Screen_Height - navH;
     
     UIScrollView *tableScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(tableScrollX, tableScrollY, tableScrollWidth, tableScrollHeight)];
     tableScrollView.delegate = self;
-    tableScrollView.contentSize = CGSizeMake(3*Main_Screen_Width, tableScrollHeight);
+    tableScrollView.contentSize = CGSizeMake(3*Screen_Width, tableScrollHeight);
     tableScrollView.pagingEnabled = YES;
     tableScrollView.alwaysBounceVertical = NO;
     tableScrollView.bounces = NO;
     _tableScrollView = tableScrollView;
     
     //动态
-    _dynamicView = [[DynamicView alloc] initWithFrame:CGRectMake(0, 0, Main_Screen_Width, tableScrollHeight)];
+    _dynamicView = [[DynamicView alloc] initWithFrame:CGRectMake(0, 0, Screen_Width, tableScrollHeight)];
     _dynamicView.tableview.tag = 100;
     _dynamicView.tableview.delegate = self;
     [self createTableHeadView:_dynamicView.tableview];
     [_tableScrollView addSubview:_dynamicView];
     
     //文章tableView
-    _articleView = [[ArticleView alloc] initWithFrame:CGRectMake(Main_Screen_Width, 0, Main_Screen_Width,tableScrollHeight)];
+    _articleView = [[ArticleView alloc] initWithFrame:CGRectMake(Screen_Width, 0, Screen_Width,tableScrollHeight)];
     _articleView.tableview.tag = 101;
     _articleView.tableview.delegate = self;
     [self createTableHeadView:_articleView.tableview];
     [_tableScrollView addSubview:_articleView];
     
     //更多tableView
-    _moreView = [[MoreView alloc] initWithFrame:CGRectMake(Main_Screen_Width*2, 0, Main_Screen_Width, tableScrollHeight)];
+    _moreView = [[MoreView alloc] initWithFrame:CGRectMake(Screen_Width*2, 0, Screen_Width, tableScrollHeight)];
     _moreView.tableview.tag = 102;
     _moreView.tableview.delegate = self;
     [self createTableHeadView:_moreView.tableview];
@@ -158,7 +158,7 @@ const CGFloat sectionBarH = 46;
 
 -(void)createTableHeadView:(UITableView *)tableView{
     
-    UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, Main_Screen_Width, 246)];
+    UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, Screen_Width, 246)];
     tableHeaderView.backgroundColor = [UIColor clearColor];
     tableView.showsVerticalScrollIndicator = NO;
     tableView.tableHeaderView = tableHeaderView;
@@ -173,11 +173,11 @@ const CGFloat sectionBarH = 46;
 
 #pragma mark 创建段头
 -(void)createSectionView{
-    _sectionView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, Main_Screen_Width, sectionBarH)];
+    _sectionView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, Screen_Width, sectionBarH)];
     _sectionView.backgroundColor = [UIColor whiteColor];
     
     //划线
-    UIView *topLine = [ToolMothod createLineWithWidth:Main_Screen_Width andHeight:1 andColor:RGBA(234, 234, 234, 1.0)];
+    UIView *topLine = [ToolMothod createLineWithWidth:Screen_Width andHeight:1 andColor:RGBA(234, 234, 234, 1.0)];
     [topLine setOrigin:CGPointMake(0,0)];
     [_sectionView addSubview:topLine];
     
@@ -207,7 +207,7 @@ const CGFloat sectionBarH = 46;
     [_sectionView addSubview:_moreBar];
     
     //划线
-    _bottomLine = [ToolMothod createLineWithWidth:Main_Screen_Width andHeight:1 andColor:RGBA(234, 234, 234, 1.0)];
+    _bottomLine = [ToolMothod createLineWithWidth:Screen_Width andHeight:1 andColor:RGBA(234, 234, 234, 1.0)];
     [_bottomLine setOrigin:CGPointMake(0, CGRectGetMaxY(_dynamicBar.frame) + 8)];
     [_sectionView addSubview:_bottomLine];
     
@@ -235,7 +235,7 @@ const CGFloat sectionBarH = 46;
     }else if ([_articleBar isEqual:sender]){
         
         [self changeItemTintColor:(MCCustomBar *)sender];
-        [_tableScrollView setContentOffset:CGPointMake(Main_Screen_Width, 0) animated:NO];
+        [_tableScrollView setContentOffset:CGPointMake(Screen_Width, 0) animated:NO];
         _articleBar.nameLabel.textColor = ItemTintColor;
         _dynamicBar.selected = NO;
         _moreBar.selected = NO;
@@ -243,7 +243,7 @@ const CGFloat sectionBarH = 46;
     }else if ([_moreBar isEqual:sender]){
         
         [self changeItemTintColor:(MCCustomBar *)sender];
-        [_tableScrollView setContentOffset:CGPointMake(Main_Screen_Width*2, 0) animated:NO];
+        [_tableScrollView setContentOffset:CGPointMake(Screen_Width*2, 0) animated:NO];
         _moreBar.nameLabel.textColor = ItemTintColor;
         _dynamicBar.selected = NO;
         _articleBar.selected = NO;

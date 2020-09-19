@@ -29,19 +29,23 @@
 }
 
 
--(void)viewWillAppear:(BOOL)animated{
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     NSLog(@"two view将显示");
 }
 
--(void)viewDidAppear:(BOOL)animated{
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     NSLog(@"two view完成显示");
 }
 
--(void)viewWillDisappear:(BOOL)animated{
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     NSLog(@" twoview将消失");
 }
 
--(void)viewDidDisappear:(BOOL)animated{
+-(void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
     NSLog(@"two view已经消失");
 }
 
@@ -51,14 +55,14 @@
 }
 
 //内存警告
--(void)didReceiveMemoryWarning{
+-(void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
     //自觉清除一些不必要的内存
-    
     // self.images = nil;
     NSLog(@"%s",__func__);
 }
+
 - (IBAction)back {
-    
     //返回上一个控制器
     [self.navigationController popViewControllerAnimated:YES];
 }

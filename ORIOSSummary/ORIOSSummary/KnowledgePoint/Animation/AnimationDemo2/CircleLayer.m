@@ -24,7 +24,6 @@ static const NSTimeInterval KAnimationBeginTime = 0.0;
 @implementation CircleLayer
 
 - (instancetype)init {
-    
     if (self == [super init]) {
         self.fillColor = [UIColor colorWithHexString:@"#da70d6"].CGColor;
         self.path = self.circleSmallPath.CGPath;

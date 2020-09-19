@@ -49,7 +49,7 @@
     // 2.自定义的控制中，添加一个imageName属性，
     
     // 3.把自定的view添加到控制器View
-    CircleImageView *imageView = [[CircleImageView alloc] initWithFrame:CGRectMake(10, 40, 100, 100)];
+    CircleImageView *imageView = [[CircleImageView alloc] initWithFrame:CGRectMake(10, 230, 100, 100)];
     
     // 设置图片
     imageView.imageName = @"aimage";

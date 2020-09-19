@@ -24,7 +24,7 @@
         tableView.delegate = self;
         tableView.separatorColor = [UIColor whiteColor];
         self.tableview = tableView;
-        _tableview.frame = CGRectMake(0, 0, Main_Screen_Width, frame.size.height);
+        _tableview.frame = CGRectMake(0, 0, Screen_Width, frame.size.height);
         [self addSubview:_tableview];
     }
     return self;

@@ -10,7 +10,7 @@
 
 @implementation UIImage (CZ)
 
-+(UIImage *)waterImageWithBgImageName:(NSString *)bgImageName waterImageName:(NSString *)waterImageName scale:(CGFloat)scale{
++ (UIImage *)waterImageWithBgImageName:(NSString *)bgImageName waterImageName:(NSString *)waterImageName scale:(CGFloat)scale{
     // 生成一张有水印的图片，一定要获取UIImage对象 然后显示在imageView上
     
     //创建一背景图片

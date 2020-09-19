@@ -25,7 +25,8 @@ static const NSTimeInterval KAnimationDuration = 0.18;
 @implementation WaveLayer
 
 - (instancetype)init {
-    if (self == [super init]) {
+    self = [super init];
+    if (self) {
         self.fillColor = [UIColor colorWithHexString:@"#40e0b0"].CGColor;
         self.path = self.wavePathStarting.CGPath;
     }

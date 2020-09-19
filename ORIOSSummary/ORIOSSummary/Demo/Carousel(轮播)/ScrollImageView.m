@@ -29,6 +29,11 @@ const static NSInteger imageCount = 5;
     return self;
 }
 
+- (void)stopScroll {
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
 #pragma private Method
 - (void)initScrollViewImage
 {

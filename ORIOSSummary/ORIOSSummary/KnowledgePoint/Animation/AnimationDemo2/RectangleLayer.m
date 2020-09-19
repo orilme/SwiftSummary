@@ -19,7 +19,8 @@ static const CGFloat KLineWidth = 5.0;
 @implementation RectangleLayer
 
 - (instancetype)init {
-    if (self == [super init]) {
+    self = [super init];
+    if (self) {
         self.fillColor = [UIColor clearColor].CGColor;
         self.lineWidth = KLineWidth;
         self.path = self.rectangleFullPath.CGPath;

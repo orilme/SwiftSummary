@@ -23,7 +23,8 @@ static const CGFloat paddingSpace = 30.0;
 @implementation TriangleLayer
 
 - (instancetype)init {
-    if (self == [super init]) {
+    self = [super init];
+    if (self) {
         self.fillColor = [UIColor colorWithHexString:@"#da70d6"].CGColor;
         self.strokeColor = [UIColor colorWithHexString:@"#da70d6"].CGColor;
         self.lineWidth = 7.0;

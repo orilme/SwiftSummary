@@ -37,6 +37,7 @@
     // 要求： 变量d指向的对象必须遵守PlayProcotol协议
     id<StudyProtocol> d = [[ProtocolGoodStudent alloc] init];
     ProtocolGoodStudent<StudyProtocol> *p = [[ProtocolGoodStudent alloc] init];
+    NSLog(@"11----%@---%@", d, p);
     
     [self test1];
     [self test2];

@@ -8,6 +8,7 @@
 
 #import "BlockVC.h"
 #import "BlockPerson.h"
+#import "BlockTwoVC.h"
 
 @interface BlockVC ()
 
@@ -53,10 +54,24 @@
        * ARC : 如果所引用的对象用了__unsafe_unretained\__weak修饰, 就不会做retain操作
     */
     
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(20, 400, Screen_Width - 40, 80)];
+    btn.backgroundColor = [UIColor redColor];
+    [btn setTitle:@"跳转" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(testBlockValue) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
     
     
     [self block1];
     [self blockChainingMethod];
+}
+
+- (void)testBlockValue {
+    BlockTwoVC *twoVC = [[BlockTwoVC alloc]init];
+    // 执行用于反向传值的block
+    twoVC.certainBlock = ^(NSString *userName, NSString *password) {
+        NSLog(@"userName: %@, password:%@", userName, password);
+    };
+    [self.navigationController pushViewController:twoVC animated:true];
 }
 
 - (void)block1 {

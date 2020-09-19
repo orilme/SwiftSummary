@@ -83,16 +83,9 @@
         //渲染
         CGContextStrokePath(layerContext);
     }
-    
-   
-    
-    
-    
+
 }
 
-
- 
- 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     

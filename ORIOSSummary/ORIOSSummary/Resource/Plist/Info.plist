@@ -32,6 +32,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>weixin</string>
+		<string>weixinULAPI</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -41,7 +42,9 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>请点击“好”以允许访问相机，如果不允许，你将无法使用扫一扫、拍摄照片、视频等功能</string>
+	<string>APP需要您的同意,才能访问相机</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>APP需要您的同意,才能访问相册</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

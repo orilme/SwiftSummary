@@ -29,10 +29,10 @@
     
     
     AutoArchiveObject *lisi = [[AdvanceUser alloc]init];
-    zhangsan.userName = @"lisi";
-    zhangsan.password = @"456";
-    zhangsan.weight = 789.7;
-    zhangsan.age = 30;
+    lisi.userName = @"lisi";
+    lisi.password = @"456";
+    lisi.weight = 789.7;
+    lisi.age = 30;
 
     
     NSMutableData *datawrite = [[NSMutableData alloc] init];

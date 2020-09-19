@@ -30,4 +30,18 @@
     
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    //禁用屏幕左滑返回手势
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    //开启
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+}
+
 @end

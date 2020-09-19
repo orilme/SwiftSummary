@@ -85,7 +85,7 @@
     NSArray *array2 = @[d2];//这种简写法编译会自动替换为类方法,本行代码实际上如下
     //NSArray *array2 = [NSArray arrayWithObjects:d2, nil];
     [d2 release];
-    
+    printf("11----%@", array2);
     
     //只要一个对象加入一个字典不管以什么方式加的,该对象都会被retain
     MemoryDog *d3 = [[MemoryDog alloc]init];
@@ -96,6 +96,7 @@
     
     MemoryDog *d4 = [[MemoryDog alloc]init];
     NSDictionary *dict2 = @{@"东条":d4};
+    printf("22----%@", dict2);
     [d4 release];
 }
 

@@ -34,6 +34,11 @@
     [self.view addSubview:self.scrollImageView];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.scrollImageView stopScroll];
+}
+
 // demo2
 - (ScrollImageView *)scrollImageView {
     if (!_scrollImageView) {

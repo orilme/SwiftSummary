@@ -7,11 +7,16 @@
 //
 
 #import "AppDelegate.h"
-#import "ORHomeViewController.h" // 公共controller
-
+// 公共controller
+#import "ORHomeViewController.h"
 // 引导页，需要添加Tool中的引导页文件夹，同时导入三方库GVUserDefaults，和category中的GVUserDefaults+BBProperties文件
 #import "introductoryPagesHelper.h"
-#import "AdvertiseHelper.h" // 启动广告
+// 启动广告
+#import "AdvertiseHelper.h"
+// 本地通知
+#import <UserNotifications/UserNotifications.h>
+// MusicPlayerVC音乐播放用
+#import <AVFoundation/AVFoundation.h>
 
 @interface AppDelegate ()
 
@@ -23,18 +28,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    /*
-     UIUserNotificationTypeNone    = 0,      没有,没有本地通知
-     UIUserNotificationTypeBadge   = 1 << 0, 接受图标右上角提醒数字
-     UIUserNotificationTypeSound   = 1 << 1, 接受通知时候,可以发出音效
-     UIUserNotificationTypeAlert   = 1 << 2, 接受提醒(横幅/弹窗)
-     */
-    // iOS8需要添加请求用户的授权
-    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
-        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound categories:nil];
-        [application registerUserNotificationSettings:settings];
-    }
+    [self setupHomeViewController];
     
+    //引导页面加载
+    [self setupIntroductoryPage];
+    
+    //启动广告（记得放最后，才可以盖在页面上面）
+    //[self setupAdveriseView];
+    
+    // 注册通知
+    [self registerAPN];
+    // 是否是通知打开app
     if (launchOptions[UIApplicationLaunchOptionsLocalNotificationKey]) {
         UILabel *label = [[UILabel alloc] init];
         label.frame = CGRectMake(0, 300, 300, 300);
@@ -46,14 +50,10 @@
         [self.window.rootViewController.view addSubview:label];
     }
     
-    
-    [self setupHomeViewController];
-    
-    //引导页面加载
-    [self setupIntroductoryPage];
-    
-    //启动广告（记得放最后，才可以盖在页面上面）
-    [self setupAdveriseView];
+    // MusicPlayerVC音乐播放用 设置音乐后台播放的会话类型
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [session setActive:YES error:nil];
     
     return YES;
 }
@@ -117,6 +117,19 @@
     [AdvertiseHelper showAdvertiserView:imageArray];
 }
 
+- (void)registerAPN {
+    // 注册通知
+    if (@available(iOS 10.0, *)) { // iOS10 以上
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            
+        }];
+    } else {// iOS8.0 以上
+        UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:setting];
+    }
+}
+
 /**
  *  如果应用在后台,通过点击通知的时候打开应用会来到该代理方法
  *  如果应用在前台,接受到本地通知就会调用该方法
@@ -141,17 +154,31 @@
     return YES;
 }
 
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    //开启后台任务
+    [application beginBackgroundTaskWithExpirationHandler:nil];
+}
+
+#pragma 接收远程事件
+-(void)remoteControlReceivedWithEvent:(UIEvent *)event {
+    // 判断是否为远程事件
+    if (event.type == UIEventTypeRemoteControl) {
+        NSLog(@"接收到远程事件");
+//        UIEventSubtypeRemoteControlPlay                播放
+//        UIEventSubtypeRemoteControlPause               暂停,
+//        UIEventSubtypeRemoteControlStop                停止,
+//        UIEventSubtypeRemoteControlPreviousTrack      上一首
+//        UIEventSubtypeRemoteControlNextTrack           下一首,
+        //event.subtype = UIEventSubtypeRemoteControlNextTrack
+        //调用block
+        self.mRemoteEventBlock(event);
+    }
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
-
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.

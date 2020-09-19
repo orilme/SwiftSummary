@@ -12,4 +12,6 @@
 #define ScrollHeight    300
 @interface ScrollImageView : UIView
 
+- (void)stopScroll;
+
 @end

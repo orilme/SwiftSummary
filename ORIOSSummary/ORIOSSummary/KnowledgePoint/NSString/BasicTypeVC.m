@@ -71,7 +71,7 @@ int add(int a, int b) {
     pfunc = add;
     
     int f = pfunc(1,5);
-    NSLog(@"add %p", add);
+    NSLog(@"add %p  %p", add, f);
     
     //用typedef定义一个新类型：函数指针类型，有两个int型参数，返回值为int型
     typedef int (*PFunc)(int a, int b);

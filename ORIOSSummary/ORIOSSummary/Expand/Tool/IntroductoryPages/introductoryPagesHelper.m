@@ -39,7 +39,7 @@
 +(void)showIntroductoryPageView:(NSArray *)imageArray
 {
     if (![introductoryPagesHelper shareInstance].curIntroductoryPagesView) {
-        [introductoryPagesHelper shareInstance].curIntroductoryPagesView=[[introductoryPagesView alloc]initPagesViewWithFrame:CGRectMake(0, 0, Main_Screen_Width, Main_Screen_Height) Images:imageArray];
+        [introductoryPagesHelper shareInstance].curIntroductoryPagesView=[[introductoryPagesView alloc]initPagesViewWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height) Images:imageArray];
     }
     
     [introductoryPagesHelper shareInstance].rootWindow = [UIApplication sharedApplication].keyWindow;

@@ -17,7 +17,7 @@
 @implementation RuntimeExploreInfo
 
 - (void)runtimeMessageTest {
-    NSLog(@"runtimeMessageTest---");
+    NSLog(@"RuntimeExploreInfo---runtimeMessageTest---");
 }
 
 @end

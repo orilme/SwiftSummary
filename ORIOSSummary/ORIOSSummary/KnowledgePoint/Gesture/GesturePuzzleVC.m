@@ -96,6 +96,7 @@
 - (UIImage *)clipImage: (UIImage *)bigImage inRect: (CGRect)rect {
     CGImageRef imageRef = CGImageCreateWithImageInRect(bigImage.CGImage, rect);
     UIImage *image = [UIImage imageWithCGImage:imageRef];
+    CGImageRelease(imageRef);
     return image;
 }
 

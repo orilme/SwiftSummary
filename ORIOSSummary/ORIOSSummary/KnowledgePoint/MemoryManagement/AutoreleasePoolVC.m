@@ -32,7 +32,7 @@
             NSLog(@"-----------");
         }
         MemoryPerson *p = [[[ MemoryPerson alloc] init] autorelease];
-
+        NSLog(@"-----------%@"), p;
     }
     [pool release];
 }

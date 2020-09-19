@@ -21,38 +21,44 @@
 }
 
 
--(void)viewWillAppear:(BOOL)animated{
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     NSLog(@"one  view将显示");
 }
 
--(void)viewDidAppear:(BOOL)animated{
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     NSLog(@"one  view完成显示");
 }
 
--(void)viewWillDisappear:(BOOL)animated{
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
     NSLog(@"one  view将消失");
 }
 
--(void)viewDidDisappear:(BOOL)animated{
+-(void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
     NSLog(@"one  view已经消失");
 }
 
--(void)viewWillUnload{
+-(void)viewWillUnload {
+    [super viewWillUnload];
     NSLog(@"one view将卸载");
     //self.view = nil;
 //    [self.image release];
     //消除资源 数组(图片)
 }
 
--(void)viewDidUnload{
+-(void)viewDidUnload {
+    [super viewDidUnload];
     NSLog(@"one view已经卸载");
 }
 
 //内存警告
--(void)didReceiveMemoryWarning{
-    //自觉清除一些不必要的内存
-    
-   // self.images = nil;
+-(void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // 自觉清除一些不必要的内存
+    //self.images = nil;
     NSLog(@"%s",__func__);
 }
 

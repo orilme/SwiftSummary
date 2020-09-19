@@ -72,6 +72,7 @@ static NSInteger const SectionCount = 50;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    NSLog(@"CollectionImageView滚动");
     self.pageCtrl.currentPage = (NSInteger)(scrollView.contentOffset.x / scrollView.frame.size.width + 0.5) % self.imageArray.count;
 }
 

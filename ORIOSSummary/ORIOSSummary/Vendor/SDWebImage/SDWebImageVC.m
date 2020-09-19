@@ -29,7 +29,7 @@
         NSLog(@"下载完成---%@", [NSThread currentThread]);
     }];
     
-    [[SDWebImageManager sharedManager].imageDownloader downloadImageWithURL:[NSURL URLWithString:@"https://user-gold-cdn.xitu.io/2019/4/6/169f13e92a6ee774?w=1748&h=1290&f=png&s=459488"] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+    [[SDWebImageManager sharedManager].imageLoader downloadImageWithURL:[NSURL URLWithString:@"https://user-gold-cdn.xitu.io/2019/4/6/169f13e92a6ee774?w=1748&h=1290&f=png&s=459488"] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
         NSLog(@"下载进度2---%f", (float)receivedSize/expectedSize);
     } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
         NSLog(@"下载完成2---%@", [NSThread currentThread]);

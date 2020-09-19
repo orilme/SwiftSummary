@@ -30,11 +30,11 @@
     
     _dataCount=5;
 
-    self.tableView.tableHeaderView=[[UITableViewHeaderFooterView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
+    self.tableView.tableHeaderView=[[UITableViewHeaderFooterView alloc]initWithFrame:CGRectMake(0, kNavBarHeight, SCREEN_WIDTH, 200)];
 
 
 #warning 该行代码添加下拉缩放图
-    [self.tableView addScalableCoverWithImage:[UIImage imageNamed:@"mebg"]];
+    [self.tableView addScalableCoverWithImage:[UIImage imageNamed:@"aimage"]];
 }
 
 
