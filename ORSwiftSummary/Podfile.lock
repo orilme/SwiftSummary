@@ -1,0 +1,68 @@
+PODS:
+  - CTMediator (44)
+  - HandyFrame (1.2.0)
+  - ORModules (0.8.0):
+    - ORModules/A (= 0.8.0)
+    - ORModules/A_Category (= 0.8.0)
+    - ORModules/B_Category (= 0.8.0)
+    - ORModules/BaseViewController (= 0.8.0)
+    - ORModules/UIKit (= 0.8.0)
+  - ORModules/A (0.8.0):
+    - CTMediator
+    - HandyFrame
+    - ORModules/B_Category
+  - ORModules/A_Category (0.8.0):
+    - CTMediator
+  - ORModules/B_Category (0.8.0):
+    - CTMediator
+  - ORModules/BaseViewController (0.8.0)
+  - ORModules/UIKit (0.8.0)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (4.0.1)
+  - TZImagePickerController (3.2.1)
+
+DEPENDENCIES:
+  - ORModules (~> 0.8.0)
+  - R.swift (= 5.0.3)
+  - RxCocoa
+  - RxSwift
+  - SnapKit (= 4.0.1)
+  - TZImagePickerController (= 3.2.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CTMediator
+    - HandyFrame
+    - R.swift
+    - R.swift.Library
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - TZImagePickerController
+  https://github.com/orilme/ORSpec.git:
+    - ORModules
+
+SPEC CHECKSUMS:
+  CTMediator: 933dba523da87bf875e4a7e8728945fbc512f1d2
+  HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
+  ORModules: 3590c7ae5524a8fcc0a00ba0faa8e3784f1d5471
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
+
+PODFILE CHECKSUM: 73a4cd771071804a003c9cdf411db63b93e28f06
+
+COCOAPODS: 1.9.1

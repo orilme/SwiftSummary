@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeIDcardPhotoTwoVC" customModule="orilme" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="ynY-4s-IpM" id="25o-AW-kHn"/>
+                <outlet property="view" destination="3qe-58-ylN" id="kJG-Ff-gXw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3qe-58-ylN">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eL-x1-kVW">
+                    <rect key="frame" x="0.0" y="94" width="414" height="54.5"/>
+                    <color key="backgroundColor" red="1" green="0.60071486230000004" blue="0.20166948439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9eL-x1-kVW" secondAttribute="height" multiplier="343:45" id="3jV-qt-DJJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="正面">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="frontClick:" destination="-1" eventType="touchUpInside" id="dMY-E8-ZlR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVd-1j-wHh">
+                    <rect key="frame" x="0.0" y="194.5" width="414" height="54"/>
+                    <color key="backgroundColor" red="1" green="0.60071486230000004" blue="0.20166948439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BVd-1j-wHh" secondAttribute="height" multiplier="343:45" id="8mm-BE-10K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="反面">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="reverseClick:" destination="-1" eventType="touchUpInside" id="enP-QF-ebR"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynY-4s-IpM">
+                    <rect key="frame" x="57" y="309" width="300" height="190"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="OPd-by-mee"/>
+                        <constraint firstAttribute="height" constant="190" id="Tqh-Wl-crC"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9eL-x1-kVW" firstAttribute="width" secondItem="9eL-x1-kVW" secondAttribute="height" multiplier="343:45" id="1WD-e0-g7O"/>
+                <constraint firstItem="ynY-4s-IpM" firstAttribute="top" secondItem="BVd-1j-wHh" secondAttribute="bottom" constant="60.5" id="6vO-2d-P84"/>
+                <constraint firstItem="BVd-1j-wHh" firstAttribute="top" secondItem="9eL-x1-kVW" secondAttribute="bottom" constant="46" id="9Ik-zf-MMK"/>
+                <constraint firstItem="9eL-x1-kVW" firstAttribute="trailing" secondItem="BVd-1j-wHh" secondAttribute="trailing" id="IsD-p7-uyR"/>
+                <constraint firstItem="ynY-4s-IpM" firstAttribute="centerX" secondItem="3qe-58-ylN" secondAttribute="centerX" id="LVg-jj-74E"/>
+                <constraint firstItem="9eL-x1-kVW" firstAttribute="width" secondItem="9eL-x1-kVW" secondAttribute="height" multiplier="343:45" id="TyX-0t-jzF"/>
+                <constraint firstItem="BVd-1j-wHh" firstAttribute="width" secondItem="BVd-1j-wHh" secondAttribute="height" multiplier="343:45" id="ZDN-R4-FU4"/>
+                <constraint firstItem="mGD-Se-YWR" firstAttribute="trailing" secondItem="9eL-x1-kVW" secondAttribute="trailing" id="dxf-aJ-JJL"/>
+                <constraint firstItem="9eL-x1-kVW" firstAttribute="leading" secondItem="3qe-58-ylN" secondAttribute="leading" id="eu4-TT-i0H"/>
+                <constraint firstItem="BVd-1j-wHh" firstAttribute="width" secondItem="BVd-1j-wHh" secondAttribute="height" multiplier="343:45" id="gIy-lq-mmS"/>
+                <constraint firstItem="BVd-1j-wHh" firstAttribute="width" secondItem="BVd-1j-wHh" secondAttribute="height" multiplier="343:45" id="j9R-Uy-79L"/>
+                <constraint firstItem="9eL-x1-kVW" firstAttribute="leading" secondItem="BVd-1j-wHh" secondAttribute="leading" id="lty-Ae-D9R"/>
+                <constraint firstItem="BVd-1j-wHh" firstAttribute="width" secondItem="BVd-1j-wHh" secondAttribute="height" multiplier="343:45" id="rCl-CB-MpP"/>
+                <constraint firstItem="9eL-x1-kVW" firstAttribute="top" secondItem="mGD-Se-YWR" secondAttribute="top" constant="50" id="xF9-7e-mUP"/>
+                <constraint firstItem="9eL-x1-kVW" firstAttribute="width" secondItem="9eL-x1-kVW" secondAttribute="height" multiplier="343:45" id="y5h-u8-TW7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="mGD-Se-YWR"/>
+            <point key="canvasLocation" x="264" y="237"/>
+        </view>
+    </objects>
+</document>

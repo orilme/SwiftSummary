@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+target 'ORSwiftSummary' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  use_frameworks!
+  inhibit_all_warnings!
+  
+  # 自己的组件库
+  source 'https://github.com/orilme/ORSpec.git'
+  pod 'ORModules', '~> 0.8.0'
+  
+  # Pods for ORSwiftSummary
+  pod 'R.swift', '5.0.3'
+  pod 'SnapKit', '4.0.1'
+  pod 'TZImagePickerController', '3.2.1'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SnapKit', '4.0.1'
+
+  target 'ORSwiftSummaryTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ORSwiftSummaryUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
