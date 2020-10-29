@@ -9,7 +9,7 @@
 #import "ModuleVC.h"
 #import <HandyFrame/UIView+LayoutMethods.h>
 #import <CTMediator/CTMediator.h>
-#import <ORModules/CTMediator+A.h>
+#import <ORModules/UIColor+HEX.h>
 
 @interface ModuleVC ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -48,6 +48,7 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     cell.textLabel.text = self.dataSource[indexPath.row];
+    cell.backgroundColor = [UIColor colorWithHex:999999];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
