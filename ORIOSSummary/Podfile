@@ -6,11 +6,11 @@ target 'ORIOSSummary' do
   # use_frameworks!
   
   source 'https://github.com/CocoaPods/Specs.git'
-  source 'https://github.com/orilme/ORSpec.git'
+#  source 'https://github.com/orilme/ORSpec.git'
 
   
-  pod 'ORModules', '~> 0.0.5'
-  
+#  pod 'ORModules', '~> 0.6.7'
+  pod 'ORModules', :path => '../'
   pod 'AFNetworking', '~> 4.0.1'
   pod 'MBProgressHUD', '~> 1.2.0'
   pod 'MJRefresh', '~> 3.4.3'

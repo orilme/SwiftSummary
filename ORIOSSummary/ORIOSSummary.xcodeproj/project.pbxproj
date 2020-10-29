@@ -286,6 +286,9 @@
 		416A4484240A7E0A00ACF87B /* ClassAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 416A447D240A7E0A00ACF87B /* ClassAModel.m */; };
 		416A4486240A7E3200ACF87B /* ProjectMaps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 416A4485240A7E3200ACF87B /* ProjectMaps.plist */; };
 		416A448C240A7EB200ACF87B /* MultipleInheritVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 416A448B240A7EB200ACF87B /* MultipleInheritVC.m */; };
+		4178A1792517994800A9606D /* ModuleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178A1782517994800A9606D /* ModuleVC.m */; };
+		4178A18025179B0200A9606D /* Target_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178A17C25179B0200A9606D /* Target_B.m */; };
+		4178A18125179B0200A9606D /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178A17F25179B0200A9606D /* BViewController.m */; };
 		417D84C423C2ED8F0060A551 /* UIImage+CZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 417D84C323C2ED8F0060A551 /* UIImage+CZ.m */; };
 		417D852123C3782B0060A551 /* DrawRectDemoaTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 417D852023C3782B0060A551 /* DrawRectDemoaTwoVC.m */; };
 		417D852723C37D550060A551 /* TouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 417D852623C37D550060A551 /* TouchVC.m */; };
@@ -502,7 +505,6 @@
 		41DBEA1723D44D0100489F47 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DBEA1323D44D0100489F47 /* CircleLayer.m */; };
 		41DBEA1A23D44D0D00489F47 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DBEA1823D44D0C00489F47 /* UIColor+Hex.m */; };
 		41DD02DA23AE5FF20048841E /* AppleStoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DD02D923AE5FF20048841E /* AppleStoreVC.m */; };
-		41DD02DC23AE607A0048841E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD02DB23AE607A0048841E /* StoreKit.framework */; };
 		41E16E2B23813307004DF045 /* MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E16E1823813307004DF045 /* MJMember.m */; };
 		41E16E2C23813307004DF045 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E16E1B23813307004DF045 /* NSObject+MJKeyValue.m */; };
 		41E16E2D23813307004DF045 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E16E1C23813307004DF045 /* MJIvar.m */; };
@@ -789,7 +791,7 @@
 		411C08AE2413D8C800A148DE /* UIView+MQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MQ.m"; sourceTree = "<group>"; };
 		411C08AF2413D8C800A148DE /* CodeOrPassWordOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeOrPassWordOneVC.h; sourceTree = "<group>"; };
 		411C08B02413D8C800A148DE /* MQVerCodeInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQVerCodeInputView.m; sourceTree = "<group>"; };
-		411CE7A22248A591003D0DEA /* ORIOSSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORIOSSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		411CE7A22248A591003D0DEA /* orilme_oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = orilme_oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411CE7BA2248A593003D0DEA /* ORIOSSummaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ORIOSSummaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		411CE7BE2248A593003D0DEA /* ORIOSSummaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORIOSSummaryTests.m; sourceTree = "<group>"; };
 		411CE7C02248A593003D0DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1126,6 +1128,12 @@
 		416A4485240A7E3200ACF87B /* ProjectMaps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProjectMaps.plist; sourceTree = "<group>"; };
 		416A448A240A7EB200ACF87B /* MultipleInheritVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleInheritVC.h; sourceTree = "<group>"; };
 		416A448B240A7EB200ACF87B /* MultipleInheritVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleInheritVC.m; sourceTree = "<group>"; };
+		4178A1772517994800A9606D /* ModuleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleVC.h; sourceTree = "<group>"; };
+		4178A1782517994800A9606D /* ModuleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleVC.m; sourceTree = "<group>"; };
+		4178A17C25179B0200A9606D /* Target_B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_B.m; sourceTree = "<group>"; };
+		4178A17D25179B0200A9606D /* Target_B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_B.h; sourceTree = "<group>"; };
+		4178A17E25179B0200A9606D /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		4178A17F25179B0200A9606D /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		417D84C223C2ED8E0060A551 /* UIImage+CZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CZ.h"; sourceTree = "<group>"; };
 		417D84C323C2ED8F0060A551 /* UIImage+CZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CZ.m"; sourceTree = "<group>"; };
 		417D851F23C3782B0060A551 /* DrawRectDemoaTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawRectDemoaTwoVC.h; sourceTree = "<group>"; };
@@ -1472,8 +1480,6 @@
 		41DBEA1923D44D0D00489F47 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		41DD02D823AE5FF20048841E /* AppleStoreVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleStoreVC.h; sourceTree = "<group>"; };
 		41DD02D923AE5FF20048841E /* AppleStoreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleStoreVC.m; sourceTree = "<group>"; };
-		41DD02DB23AE607A0048841E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		41DD02DD23AE60930048841E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		41E16E1823813307004DF045 /* MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMember.m; sourceTree = "<group>"; };
 		41E16E1923813307004DF045 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
 		41E16E1A23813307004DF045 /* MJMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMethod.h; sourceTree = "<group>"; };
@@ -1656,7 +1662,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41935191241E72BD0035BDEE /* libxml2.tbd in Frameworks */,
-				41DD02DC23AE607A0048841E /* StoreKit.framework in Frameworks */,
 				41E16E7123814991004DF045 /* MapKit.framework in Frameworks */,
 				41E16E6F2381496C004DF045 /* MessageUI.framework in Frameworks */,
 				FB7728E0B1B8A1420C0A6787 /* libPods-ORIOSSummary.a in Frameworks */,
@@ -1686,7 +1691,6 @@
 			isa = PBXGroup;
 			children = (
 				4193518F241E72A90035BDEE /* libxml2.tbd */,
-				41DD02DB23AE607A0048841E /* StoreKit.framework */,
 				41E16E7023814991004DF045 /* MapKit.framework */,
 				41E16E6E2381496C004DF045 /* MessageUI.framework */,
 				03B03B510587CD8F3DE521AC /* libPods-ORIOSSummary.a */,
@@ -1699,6 +1703,7 @@
 		4101F161239225320019EC6D /* KnowledgePoint */ = {
 			isa = PBXGroup;
 			children = (
+				4178A1762517992D00A9606D /* Module */,
 				4161520F242BA21E00D3374E /* Encrypt(加密) */,
 				41A5ECCD2424B8E900FB6937 /* GameKit */,
 				41A5ECCC2424A1E700FB6937 /* Net(网络相关) */,
@@ -2217,7 +2222,7 @@
 		411CE7A32248A591003D0DEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				411CE7A22248A591003D0DEA /* ORIOSSummary.app */,
+				411CE7A22248A591003D0DEA /* orilme_oc.app */,
 				411CE7BA2248A593003D0DEA /* ORIOSSummaryTests.xctest */,
 				411CE7C52248A593003D0DEA /* ORIOSSummaryUITests.xctest */,
 			);
@@ -2916,6 +2921,35 @@
 				416A447D240A7E0A00ACF87B /* ClassAModel.m */,
 			);
 			path = ClassA;
+			sourceTree = "<group>";
+		};
+		4178A1762517992D00A9606D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4178A17A25179B0200A9606D /* BViewController */,
+				4178A1772517994800A9606D /* ModuleVC.h */,
+				4178A1782517994800A9606D /* ModuleVC.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		4178A17A25179B0200A9606D /* BViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4178A17B25179B0200A9606D /* Targets */,
+				4178A17E25179B0200A9606D /* BViewController.h */,
+				4178A17F25179B0200A9606D /* BViewController.m */,
+			);
+			path = BViewController;
+			sourceTree = "<group>";
+		};
+		4178A17B25179B0200A9606D /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				4178A17C25179B0200A9606D /* Target_B.m */,
+				4178A17D25179B0200A9606D /* Target_B.h */,
+			);
+			path = Targets;
 			sourceTree = "<group>";
 		};
 		417D852423C37D430060A551 /* Touch */ = {
@@ -3618,7 +3652,6 @@
 		41DD02D723AE5F830048841E /* AppleStore */ = {
 			isa = PBXGroup;
 			children = (
-				41DD02DD23AE60930048841E /* StoreKit.framework */,
 				41DD02D823AE5FF20048841E /* AppleStoreVC.h */,
 				41DD02D923AE5FF20048841E /* AppleStoreVC.m */,
 			);
@@ -3953,7 +3986,7 @@
 			);
 			name = ORIOSSummary;
 			productName = ORIOSSummary;
-			productReference = 411CE7A22248A591003D0DEA /* ORIOSSummary.app */;
+			productReference = 411CE7A22248A591003D0DEA /* orilme_oc.app */;
 			productType = "com.apple.product-type.application";
 		};
 		411CE7B92248A593003D0DEA /* ORIOSSummaryTests */ = {
@@ -4444,6 +4477,7 @@
 				41F9A5E6239A9CBB004BDDC4 /* BlockVC.m in Sources */,
 				4160657823CAD39D00B5DB92 /* NSThreadVC.m in Sources */,
 				41D280CB2423CC5A00557F67 /* ioapi.c in Sources */,
+				4178A1792517994800A9606D /* ModuleVC.m in Sources */,
 				41593A4B23EC57C80088F81C /* UIScrollView+ScalableCover.m in Sources */,
 				4161521B242BA86C00D3374E /* SSKeychain.m in Sources */,
 				41E7C0AE2417F49A003F70B2 /* CodeOrPassWordThreeVC.m in Sources */,
@@ -4694,6 +4728,7 @@
 				41AB883E23A7D0F700C09EBE /* FMResultSet.m in Sources */,
 				41D8AEC32410000100E2C7F1 /* ShowImageView.m in Sources */,
 				414E135323C1A9A6009FF421 /* UIResponder+Router.m in Sources */,
+				4178A18125179B0200A9606D /* BViewController.m in Sources */,
 				4103899F23D1BC2500AACAA8 /* AdvertiseView.m in Sources */,
 				41B80EE1240BD85000865A2D /* FFToast.m in Sources */,
 				411C088B2413D3EF00A148DE /* ChineseString.m in Sources */,
@@ -4711,6 +4746,7 @@
 				411C086E2413991900A148DE /* UIColor+Extensions.m in Sources */,
 				414A13312418F90100446514 /* QFHttpConnection.m in Sources */,
 				414E133723C1A836009FF421 /* CZBlueView.m in Sources */,
+				4178A18025179B0200A9606D /* Target_B.m in Sources */,
 				411C08A32413D7A000A148DE /* JJCPayCodeTextFieldCell.m in Sources */,
 				418744F72404D38900365973 /* XMGLineLayout.m in Sources */,
 			);
@@ -4905,7 +4941,7 @@
 					"$(PROJECT_DIR)/ORIOSSummary/Demo/Voice(音频\\ 音乐、录音等)/Record/D3RecordBtutton",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orilme.cn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = orilme_oc;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4941,7 +4977,7 @@
 					"$(PROJECT_DIR)/ORIOSSummary/Demo/Voice(音频\\ 音乐、录音等)/Record/D3RecordBtutton",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.orilme.cn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = orilme_oc;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -87,6 +87,10 @@
                  @{@"menuName": @"NSOperation", @"className": @"NSOperationVC"},
                  @{@"menuName": @"NSThread", @"className": @"NSThreadVC"},
                  @{@"menuName": @"锁(NSLock、@synchronized、NSCondition)", @"className": @"ThreadLockVC"},]}.mutableCopy,
+    // 组件化
+    @{@"headName": @"组件化",
+      @"isFold": @"1",
+      @"value": @[@{@"menuName": @"组件化举例", @"className": @"ModuleVC"}]}.mutableCopy,
     // 内存管理
     @{@"headName": @"内存管理",
       @"isFold": @"1",
