@@ -1,0 +1,36 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ORIOSSummary' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+  
+  source 'https://github.com/CocoaPods/Specs.git'
+#  source 'https://github.com/orilme/ORSpec.git'
+
+  
+#  pod 'ORModules', '~> 0.6.7'
+  pod 'ORModules', :path => '../'
+  pod 'AFNetworking', '~> 4.0.1'
+  pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'MJRefresh', '~> 3.4.3'
+  pod 'Masonry', '~> 1.1.0'
+  pod 'SDWebImage', '~> 5.8.4'
+  pod 'WechatOpenSDK', '~> 1.8.7'
+  pod 'CYLTabBarController', '~> 1.29.0'
+  pod 'CTMediator'
+  
+    
+  # Pods for ORIOSSummary
+
+  target 'ORIOSSummaryTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ORIOSSummaryUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
