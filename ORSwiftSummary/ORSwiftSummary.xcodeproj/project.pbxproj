@@ -12,8 +12,13 @@
 		410938EA24C33A4C00CD1C22 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938E924C33A4C00CD1C22 /* PopoverView.swift */; };
 		410938EC24C33A9300CD1C22 /* PopFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938EB24C33A9300CD1C22 /* PopFilterView.swift */; };
 		410B18AD24082F550043B1B4 /* Pods_ORSwiftSummary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1117CE648646AF54B60476 /* Pods_ORSwiftSummary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41134D092554EDFC0013CB66 /* CMCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41134D082554EDFC0013CB66 /* CMCollectionVC.swift */; };
+		41134D0C2554F2820013CB66 /* MultimediaPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41134D0A2554F2820013CB66 /* MultimediaPreviewView.swift */; };
+		41134D102554F2DA0013CB66 /* ImageMediaPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41134D0E2554F2DA0013CB66 /* ImageMediaPreviewCell.swift */; };
+		41134D112554F2DA0013CB66 /* ImageMediaPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41134D0F2554F2DA0013CB66 /* ImageMediaPreviewCell.xib */; };
 		411623FA243081E600832DBD /* GCDSemaphoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411623F9243081E600832DBD /* GCDSemaphoreVC.swift */; };
 		41170612253D2DC0001FAE89 /* CoreMotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41170610253D2DC0001FAE89 /* CoreMotionVC.swift */; };
+		4135EFC925528E0E003D3914 /* ImageChangeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4135EFC825528E0E003D3914 /* ImageChangeDataVC.swift */; };
 		4141DDFE240775C300BEACBC /* KnowledgePointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */; };
 		4141DDFF240775C300BEACBC /* NormalDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DDFD240775C300BEACBC /* NormalDemoVC.swift */; };
 		4141DE082407766F00BEACBC /* AutoHeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE052407766F00BEACBC /* AutoHeightVC.swift */; };
@@ -86,8 +91,13 @@
 		410938D724C3318600CD1C22 /* PopoverViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewVC.swift; sourceTree = "<group>"; };
 		410938E924C33A4C00CD1C22 /* PopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 		410938EB24C33A9300CD1C22 /* PopFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopFilterView.swift; sourceTree = "<group>"; };
+		41134D082554EDFC0013CB66 /* CMCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMCollectionVC.swift; sourceTree = "<group>"; };
+		41134D0A2554F2820013CB66 /* MultimediaPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultimediaPreviewView.swift; sourceTree = "<group>"; };
+		41134D0E2554F2DA0013CB66 /* ImageMediaPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMediaPreviewCell.swift; sourceTree = "<group>"; };
+		41134D0F2554F2DA0013CB66 /* ImageMediaPreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageMediaPreviewCell.xib; sourceTree = "<group>"; };
 		411623F9243081E600832DBD /* GCDSemaphoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDSemaphoreVC.swift; sourceTree = "<group>"; };
 		41170610253D2DC0001FAE89 /* CoreMotionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionVC.swift; sourceTree = "<group>"; };
+		4135EFC825528E0E003D3914 /* ImageChangeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChangeDataVC.swift; sourceTree = "<group>"; };
 		4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgePointVC.swift; sourceTree = "<group>"; };
 		4141DDFD240775C300BEACBC /* NormalDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalDemoVC.swift; sourceTree = "<group>"; };
 		4141DE052407766F00BEACBC /* AutoHeightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHeightVC.swift; sourceTree = "<group>"; };
@@ -203,10 +213,22 @@
 			isa = PBXGroup;
 			children = (
 				41170610253D2DC0001FAE89 /* CoreMotionVC.swift */,
+				41134D082554EDFC0013CB66 /* CMCollectionVC.swift */,
 				418276032545850F00FC88E9 /* GyroMannager.swift */,
 				418276042545850F00FC88E9 /* GyroscopeImageView.swift */,
+				41134D0A2554F2820013CB66 /* MultimediaPreviewView.swift */,
+				41134D0E2554F2DA0013CB66 /* ImageMediaPreviewCell.swift */,
+				41134D0F2554F2DA0013CB66 /* ImageMediaPreviewCell.xib */,
 			);
 			path = GyroscopeImageView;
+			sourceTree = "<group>";
+		};
+		4135EFC725528DDE003D3914 /* ImageChangeData */ = {
+			isa = PBXGroup;
+			children = (
+				4135EFC825528E0E003D3914 /* ImageChangeDataVC.swift */,
+			);
+			path = ImageChangeData;
 			sourceTree = "<group>";
 		};
 		4141DDFB240775AD00BEACBC /* BasicVC */ = {
@@ -221,10 +243,11 @@
 		4141DE00240775FD00BEACBC /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				4117060E253D2D9D001FAE89 /* GyroscopeImageView */,
-				410938D324C3302400CD1C22 /* AlertView */,
-				4141DE222407A85B00BEACBC /* TakePhoto(相机拍身份证) */,
 				4141DE032407763D00BEACBC /* ClipImage */,
+				4141DE222407A85B00BEACBC /* TakePhoto(相机拍身份证) */,
+				410938D324C3302400CD1C22 /* AlertView */,
+				4117060E253D2D9D001FAE89 /* GyroscopeImageView */,
+				4135EFC725528DDE003D3914 /* ImageChangeData */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -233,10 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				41CA97FA24F7A7C5009B6473 /* Block */,
-				4184618024CA8AAB00B689D2 /* RxSwift */,
-				411623F8243081C400832DBD /* Multithreading */,
-				4141DE1F24077B1500BEACBC /* BasicGrammar */,
 				4141DE042407764800BEACBC /* TextViewAutoHeight */,
+				4141DE1F24077B1500BEACBC /* BasicGrammar */,
+				411623F8243081C400832DBD /* Multithreading */,
+				4184618024CA8AAB00B689D2 /* RxSwift */,
 			);
 			path = KnowledgePoint;
 			sourceTree = "<group>";
@@ -523,6 +546,7 @@
 				41D8AEF32410015D00E2C7F1 /* TakeIDcardPhotoTwoVC.xib in Resources */,
 				4141DE1B2407783400BEACBC /* Assets.xcassets in Resources */,
 				41D8AEF62410015D00E2C7F1 /* DXIDCardCamera.bundle in Resources */,
+				41134D112554F2DA0013CB66 /* ImageMediaPreviewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,8 +659,10 @@
 			files = (
 				410938EA24C33A4C00CD1C22 /* PopoverView.swift in Sources */,
 				41D8AEE82410015500E2C7F1 /* TakePictureVC.swift in Sources */,
+				41134D0C2554F2820013CB66 /* MultimediaPreviewView.swift in Sources */,
 				41D8AEEA2410015500E2C7F1 /* TakePhotoTool.swift in Sources */,
 				418276052545850F00FC88E9 /* GyroMannager.swift in Sources */,
+				41134D102554F2DA0013CB66 /* ImageMediaPreviewCell.swift in Sources */,
 				41D8AEE92410015500E2C7F1 /* TakeIDcardPhotoVC.swift in Sources */,
 				411623FA243081E600832DBD /* GCDSemaphoreVC.swift in Sources */,
 				4141DE1D2407783400BEACBC /* AppDelegate.swift in Sources */,
@@ -652,6 +678,8 @@
 				418276062545850F00FC88E9 /* GyroscopeImageView.swift in Sources */,
 				4141DDFF240775C300BEACBC /* NormalDemoVC.swift in Sources */,
 				4141DE2124077B3D00BEACBC /* BasicGrammarVC.swift in Sources */,
+				41134D092554EDFC0013CB66 /* CMCollectionVC.swift in Sources */,
+				4135EFC925528E0E003D3914 /* ImageChangeDataVC.swift in Sources */,
 				410938EC24C33A9300CD1C22 /* PopFilterView.swift in Sources */,
 				4141DE0D2407767800BEACBC /* UIScreen+Extension.swift in Sources */,
 				41D8AEF22410015D00E2C7F1 /* TakeIDcardPhotoTwoVC.swift in Sources */,

@@ -28,6 +28,7 @@ class KnowledgePointVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     ["menuName": "基本语法", "className": "BasicGrammarVC"],
     ["menuName": "GCD 信号量使用 弹窗依次弹出", "className": "GCDSemaphoreVC"],
     ["menuName": "RxSwift", "className": "RxSwiftVC"],
+    ["menuName": "Image 转 Data 清晰度对比", "className": "ImageChangeDataVC"],
     ]
     
     override func viewDidLoad() {

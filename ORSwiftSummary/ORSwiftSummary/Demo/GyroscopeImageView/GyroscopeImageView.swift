@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreMotion
+import MJRefresh
 
 class GyroscopeImageView: UIView {
     
@@ -82,15 +83,15 @@ class GyroscopeImageView: UIView {
         if let vc = self.parentVC {
             /// 判断不在VR所在的界面时不执行后面的代码，不移动VR
             isGyroscopeUpdate = vc.isViewLoaded && (vc.view.window != nil)
-            print("陀螺仪---Updates---2", isGyroscopeUpdate, (vc.view.window != nil))
+            //print("陀螺仪---Updates---2", isGyroscopeUpdate, (vc.view.window != nil))
         }
         /// 隐藏不刷新，当前控制器不在最前面不刷新
         guard !isHidden,
             isGyroscopeUpdate,
-            let gyroData = notification.userInfo?["gyroData"] as? CMDeviceMotion else {
+            let gyroData = notification.userInfo?["gyroData"] as? CMGyroData else {
             return
         }
-        print("陀螺仪---Updates---1")
+        //print("陀螺仪---Updates---1")
         let x = CGFloat(gyroData.rotationRate.x)
         let y = CGFloat(gyroData.rotationRate.y)
         self.imagePanTransform(x: x, y: y)
@@ -113,9 +114,10 @@ class GyroscopeImageView: UIView {
         if let cheight = height {
             containerHeight = cheight
         }
-        moveImgView.sizeToFit()
-        let imgWidth = moveImgView.frame.size.width
-        let imgHeight = moveImgView.frame.size.height
+        //moveImgView.sizeToFit()
+        let moveImgViewSize = moveImgView.sizeThatFits(CGSize.zero)
+        let imgWidth = moveImgViewSize.width
+        let imgHeight = moveImgViewSize.height
         
         var newHeight = imgHeight
         var newWidth = imgWidth
@@ -139,7 +141,7 @@ class GyroscopeImageView: UIView {
     func updateMoveImgViewFrame(height: CGFloat) {
         let ratio = height/startSize.height
         scrollView.setZoomScale(ratio, animated: false)
-        //scrollView.mj_size = CGSize(width: startImgSize.width, height: startImgSize.height * ratio)
+        scrollView.mj_size = CGSize(width: startImgSize.width, height: startImgSize.height * ratio)
     }
 
     /// 更新 imagView 的 frame
@@ -179,6 +181,7 @@ class GyroscopeImageView: UIView {
         frame.origin.x = -mMaxOffsetX + currentOffsetX
         frame.origin.y = -mMaxOffsetY + currentOffsetY
         self.moveImgView.frame = frame
+        self.layoutIfNeeded()
     }
     
     deinit {

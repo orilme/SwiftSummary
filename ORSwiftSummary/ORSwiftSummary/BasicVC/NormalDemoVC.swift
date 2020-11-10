@@ -28,6 +28,7 @@ class NormalDemoVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     ["menuName": "相机拍身份证2", "className": "TakeIDcardPhotoTwoVC"],
     ["menuName": "气泡菜单", "className": "PopoverViewVC"],
     ["menuName": "陀螺仪使用-晃动手机移动图片", "className": "CoreMotionVC"],
+    ["menuName": "陀螺仪使用-晃动手机移动图片-collectionView中", "className": "CMCollectionVC"],
     ]
     
     override func viewDidLoad() {

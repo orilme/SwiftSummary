@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageMediaPreviewCell" id="Feo-Qc-DLc" customClass="ImageMediaPreviewCell" customModule="orilme_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlS-XD-R5R" customClass="GyroscopeImageView" customModule="orilme_swift" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="225"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OlS-XD-R5R" secondAttribute="trailing" id="87a-Qq-But"/>
+                <constraint firstItem="OlS-XD-R5R" firstAttribute="leading" secondItem="Feo-Qc-DLc" secondAttribute="leading" id="ELZ-62-Hgt"/>
+                <constraint firstAttribute="bottom" secondItem="OlS-XD-R5R" secondAttribute="bottom" id="qbY-mQ-0wp"/>
+                <constraint firstItem="OlS-XD-R5R" firstAttribute="top" secondItem="Feo-Qc-DLc" secondAttribute="top" id="rg0-Js-Vqs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="INC-Xn-AQA"/>
+            <size key="customSize" width="202" height="225"/>
+            <connections>
+                <outlet property="gyroImgView" destination="OlS-XD-R5R" id="H3K-GH-Bh3"/>
+            </connections>
+            <point key="canvasLocation" x="198.40000000000001" y="-168.6656671664168"/>
+        </collectionViewCell>
+    </objects>
+</document>
