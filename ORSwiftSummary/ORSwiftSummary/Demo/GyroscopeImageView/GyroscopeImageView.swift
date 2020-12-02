@@ -132,8 +132,8 @@ class GyroscopeImageView: UIView {
         mMaxOffsetY = (newHeight - containerHeight) * 0.5
         startSize = CGSize(width: containerWidth, height: containerHeight)
         startImgSize = CGSize(width: newWidth, height: newHeight)
-        moveImgView.frame = CGRect(x: -self.mMaxOffsetX, y: -self.mMaxOffsetY, width: newWidth, height: newHeight)
-        scrollView.frame = CGRect(x: 0, y: 0, width: containerWidth, height: containerHeight)
+        scrollView.frame = CGRect(x: -self.mMaxOffsetX, y: -self.mMaxOffsetY, width: newWidth, height: newHeight)
+        moveImgView.frame = CGRect(x: 0, y: 0, width: newWidth, height: newHeight)
         self.parentVC = self.firstViewController()
     }
     
@@ -178,8 +178,8 @@ class GyroscopeImageView: UIView {
         currentOffsetY = mMaxOffsetY * progressY
         
         var frame = moveImgView.frame
-        frame.origin.x = -mMaxOffsetX + currentOffsetX
-        frame.origin.y = -mMaxOffsetY + currentOffsetY
+        frame.origin.x = currentOffsetX
+        frame.origin.y = currentOffsetY
         self.moveImgView.frame = frame
         self.layoutIfNeeded()
     }

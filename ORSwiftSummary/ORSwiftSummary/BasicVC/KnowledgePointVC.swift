@@ -29,6 +29,9 @@ class KnowledgePointVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     ["menuName": "GCD 信号量使用 弹窗依次弹出", "className": "GCDSemaphoreVC"],
     ["menuName": "RxSwift", "className": "RxSwiftVC"],
     ["menuName": "Image 转 Data 清晰度对比", "className": "ImageChangeDataVC"],
+    ["menuName": "自定义转场动画", "className": "PushAnimationVC"],
+    ["menuName": "动画", "className": "AnimationVC"],
+    ["menuName": "钥匙串存储密码", "className": "KeyChainVC"],
     ]
     
     override func viewDidLoad() {

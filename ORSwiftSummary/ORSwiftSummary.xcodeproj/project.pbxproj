@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1DC797182544842DB0426D8A /* Pods_ORSwiftSummaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6B05B7DE4568C6ABAD7334 /* Pods_ORSwiftSummaryTests.framework */; };
+		4104BD7225650BC5000A2D68 /* PushAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104BD7125650BC5000A2D68 /* PushAnimationVC.swift */; };
+		4104BD7425650D0B000A2D68 /* CustomAnimatePush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104BD7325650D0B000A2D68 /* CustomAnimatePush.swift */; };
+		4104BD7625650D32000A2D68 /* PushedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104BD7525650D32000A2D68 /* PushedVC.swift */; };
 		410938D824C3318600CD1C22 /* PopoverViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938D724C3318600CD1C22 /* PopoverViewVC.swift */; };
 		410938EA24C33A4C00CD1C22 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938E924C33A4C00CD1C22 /* PopoverView.swift */; };
 		410938EC24C33A9300CD1C22 /* PopFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938EB24C33A9300CD1C22 /* PopFilterView.swift */; };
@@ -18,6 +21,9 @@
 		41134D112554F2DA0013CB66 /* ImageMediaPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41134D0F2554F2DA0013CB66 /* ImageMediaPreviewCell.xib */; };
 		411623FA243081E600832DBD /* GCDSemaphoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411623F9243081E600832DBD /* GCDSemaphoreVC.swift */; };
 		41170612253D2DC0001FAE89 /* CoreMotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41170610253D2DC0001FAE89 /* CoreMotionVC.swift */; };
+		41185499256B8F53009FB5D1 /* CustomPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41185498256B8F53009FB5D1 /* CustomPush.swift */; };
+		41221792256F8C3C0051D393 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41221791256F8C3C0051D393 /* main.swift */; };
+		41353D9A256DF641008182BE /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41353D99256DF641008182BE /* AnimationVC.swift */; };
 		4135EFC925528E0E003D3914 /* ImageChangeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4135EFC825528E0E003D3914 /* ImageChangeDataVC.swift */; };
 		4141DDFE240775C300BEACBC /* KnowledgePointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */; };
 		4141DDFF240775C300BEACBC /* NormalDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DDFD240775C300BEACBC /* NormalDemoVC.swift */; };
@@ -33,6 +39,8 @@
 		4141DE1C2407783400BEACBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4141DE182407783400BEACBC /* LaunchScreen.storyboard */; };
 		4141DE1D2407783400BEACBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE192407783400BEACBC /* AppDelegate.swift */; };
 		4141DE2124077B3D00BEACBC /* BasicGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE2024077B3D00BEACBC /* BasicGrammarVC.swift */; };
+		41471ACE2570B011005286FD /* KeyChainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41471ACC2570B011005286FD /* KeyChainVC.swift */; };
+		41471ACF2570B011005286FD /* KeyChainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41471ACD2570B011005286FD /* KeyChainVC.xib */; };
 		414DBCD323AA785600BE8A27 /* ORSwiftSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414DBCD223AA785600BE8A27 /* ORSwiftSummaryTests.swift */; };
 		414DBCDE23AA785600BE8A27 /* ORSwiftSummaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414DBCDD23AA785600BE8A27 /* ORSwiftSummaryUITests.swift */; };
 		418276052545850F00FC88E9 /* GyroMannager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418276032545850F00FC88E9 /* GyroMannager.swift */; };
@@ -88,6 +96,9 @@
 		0C5DB642E109A9C051F89C1B /* Pods-ORSwiftSummaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORSwiftSummaryTests.release.xcconfig"; path = "Target Support Files/Pods-ORSwiftSummaryTests/Pods-ORSwiftSummaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		31B067CAF4BF8A1450E2D987 /* Pods-ORSwiftSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORSwiftSummary.debug.xcconfig"; path = "Target Support Files/Pods-ORSwiftSummary/Pods-ORSwiftSummary.debug.xcconfig"; sourceTree = "<group>"; };
 		3481A53B6BE370A622B45907 /* Pods-ORSwiftSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORSwiftSummary.release.xcconfig"; path = "Target Support Files/Pods-ORSwiftSummary/Pods-ORSwiftSummary.release.xcconfig"; sourceTree = "<group>"; };
+		4104BD7125650BC5000A2D68 /* PushAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAnimationVC.swift; sourceTree = "<group>"; };
+		4104BD7325650D0B000A2D68 /* CustomAnimatePush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatePush.swift; sourceTree = "<group>"; };
+		4104BD7525650D32000A2D68 /* PushedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushedVC.swift; sourceTree = "<group>"; };
 		410938D724C3318600CD1C22 /* PopoverViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewVC.swift; sourceTree = "<group>"; };
 		410938E924C33A4C00CD1C22 /* PopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 		410938EB24C33A9300CD1C22 /* PopFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopFilterView.swift; sourceTree = "<group>"; };
@@ -97,6 +108,9 @@
 		41134D0F2554F2DA0013CB66 /* ImageMediaPreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageMediaPreviewCell.xib; sourceTree = "<group>"; };
 		411623F9243081E600832DBD /* GCDSemaphoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDSemaphoreVC.swift; sourceTree = "<group>"; };
 		41170610253D2DC0001FAE89 /* CoreMotionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionVC.swift; sourceTree = "<group>"; };
+		41185498256B8F53009FB5D1 /* CustomPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPush.swift; sourceTree = "<group>"; };
+		41221791256F8C3C0051D393 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		41353D99256DF641008182BE /* AnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
 		4135EFC825528E0E003D3914 /* ImageChangeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChangeDataVC.swift; sourceTree = "<group>"; };
 		4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgePointVC.swift; sourceTree = "<group>"; };
 		4141DDFD240775C300BEACBC /* NormalDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalDemoVC.swift; sourceTree = "<group>"; };
@@ -113,6 +127,8 @@
 		4141DE182407783400BEACBC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4141DE192407783400BEACBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4141DE2024077B3D00BEACBC /* BasicGrammarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGrammarVC.swift; sourceTree = "<group>"; };
+		41471ACC2570B011005286FD /* KeyChainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainVC.swift; sourceTree = "<group>"; };
+		41471ACD2570B011005286FD /* KeyChainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyChainVC.xib; sourceTree = "<group>"; };
 		414DBCB823AA785400BE8A27 /* orilme_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = orilme_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		414DBCCE23AA785600BE8A27 /* ORSwiftSummaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ORSwiftSummaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		414DBCD223AA785600BE8A27 /* ORSwiftSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORSwiftSummaryTests.swift; sourceTree = "<group>"; };
@@ -181,6 +197,18 @@
 				A94B4E7E71A1635216CF94E5 /* Pods-ORSwiftSummaryUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4104BD7025650B84000A2D68 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				41353D99256DF641008182BE /* AnimationVC.swift */,
+				4104BD7125650BC5000A2D68 /* PushAnimationVC.swift */,
+				4104BD7525650D32000A2D68 /* PushedVC.swift */,
+				4104BD7325650D0B000A2D68 /* CustomAnimatePush.swift */,
+				41185498256B8F53009FB5D1 /* CustomPush.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		410938D324C3302400CD1C22 /* AlertView */ = {
@@ -255,6 +283,8 @@
 		4141DE012407761100BEACBC /* KnowledgePoint */ = {
 			isa = PBXGroup;
 			children = (
+				41471ACA2570AF4C005286FD /* Cache */,
+				4104BD7025650B84000A2D68 /* Animation */,
 				41CA97FA24F7A7C5009B6473 /* Block */,
 				4141DE042407764800BEACBC /* TextViewAutoHeight */,
 				4141DE1F24077B1500BEACBC /* BasicGrammar */,
@@ -297,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				4141DE192407783400BEACBC /* AppDelegate.swift */,
+				41221791256F8C3C0051D393 /* main.swift */,
 				4141DE172407783400BEACBC /* Assets.xcassets */,
 				4141DE162407783400BEACBC /* Info.plist */,
 				4141DE182407783400BEACBC /* LaunchScreen.storyboard */,
@@ -319,6 +350,23 @@
 				41D8AEE42410012F00E2C7F1 /* Two */,
 			);
 			path = "TakePhoto(相机拍身份证)";
+			sourceTree = "<group>";
+		};
+		41471ACA2570AF4C005286FD /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				41471ACB2570AFB7005286FD /* KeyChain */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		41471ACB2570AFB7005286FD /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				41471ACC2570B011005286FD /* KeyChainVC.swift */,
+				41471ACD2570B011005286FD /* KeyChainVC.xib */,
+			);
+			path = KeyChain;
 			sourceTree = "<group>";
 		};
 		414DBCAF23AA785400BE8A27 = {
@@ -544,6 +592,7 @@
 				4141DE1C2407783400BEACBC /* LaunchScreen.storyboard in Resources */,
 				4141DE092407766F00BEACBC /* FBTopSelectCell.xib in Resources */,
 				41D8AEF32410015D00E2C7F1 /* TakeIDcardPhotoTwoVC.xib in Resources */,
+				41471ACF2570B011005286FD /* KeyChainVC.xib in Resources */,
 				4141DE1B2407783400BEACBC /* Assets.xcassets in Resources */,
 				41D8AEF62410015D00E2C7F1 /* DXIDCardCamera.bundle in Resources */,
 				41134D112554F2DA0013CB66 /* ImageMediaPreviewCell.xib in Resources */,
@@ -663,9 +712,11 @@
 				41D8AEEA2410015500E2C7F1 /* TakePhotoTool.swift in Sources */,
 				418276052545850F00FC88E9 /* GyroMannager.swift in Sources */,
 				41134D102554F2DA0013CB66 /* ImageMediaPreviewCell.swift in Sources */,
+				41221792256F8C3C0051D393 /* main.swift in Sources */,
 				41D8AEE92410015500E2C7F1 /* TakeIDcardPhotoVC.swift in Sources */,
 				411623FA243081E600832DBD /* GCDSemaphoreVC.swift in Sources */,
 				4141DE1D2407783400BEACBC /* AppDelegate.swift in Sources */,
+				4104BD7225650BC5000A2D68 /* PushAnimationVC.swift in Sources */,
 				4141DE0E2407767800BEACBC /* UIDevice+Extension.swift in Sources */,
 				4141DDFE240775C300BEACBC /* KnowledgePointVC.swift in Sources */,
 				4141DE122407768300BEACBC /* ClipImageViewController.swift in Sources */,
@@ -683,9 +734,14 @@
 				410938EC24C33A9300CD1C22 /* PopFilterView.swift in Sources */,
 				4141DE0D2407767800BEACBC /* UIScreen+Extension.swift in Sources */,
 				41D8AEF22410015D00E2C7F1 /* TakeIDcardPhotoTwoVC.swift in Sources */,
+				41471ACE2570B011005286FD /* KeyChainVC.swift in Sources */,
 				41CA97FC24F7A7F2009B6473 /* BlockVC.swift in Sources */,
+				4104BD7425650D0B000A2D68 /* CustomAnimatePush.swift in Sources */,
 				4141DE082407766F00BEACBC /* AutoHeightVC.swift in Sources */,
 				41170612253D2DC0001FAE89 /* CoreMotionVC.swift in Sources */,
+				4104BD7625650D32000A2D68 /* PushedVC.swift in Sources */,
+				41185499256B8F53009FB5D1 /* CustomPush.swift in Sources */,
+				41353D9A256DF641008182BE /* AnimationVC.swift in Sources */,
 				410938D824C3318600CD1C22 /* PopoverViewVC.swift in Sources */,
 				4141DE0A2407766F00BEACBC /* FBTopSelectCell.swift in Sources */,
 			);

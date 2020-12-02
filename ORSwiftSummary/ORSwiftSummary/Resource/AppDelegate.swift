@@ -4,11 +4,11 @@
 //
 //  Created by orilme on 2019/12/18.
 //  Copyright © 2019 orilme. All rights reserved.
-//
+//  com.orilme.swift.cn
 
 import UIKit
 
-@UIApplicationMain
+//@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
         self.window?.rootViewController = self.homeController()
         self.window?.makeKeyAndVisible()
+        
+        DispatchQueue.main.async {
+            print("APP启动时间耗时，从mian函数开始到didFinishLaunchingWithOptions方法---\(CFAbsoluteTimeGetCurrent() - appStartLaunchTime)")
+        }
         
         return true
     }
