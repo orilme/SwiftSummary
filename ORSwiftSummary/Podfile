@@ -17,7 +17,7 @@ target 'ORSwiftSummary' do
   pod 'TZImagePickerController', '3.2.1'
   pod 'R.swift', '5.0.3'
   pod 'RxCocoa'
-
+  
   target 'ORSwiftSummaryTests' do
     inherit! :search_paths
     # Pods for testing

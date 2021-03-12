@@ -136,6 +136,7 @@
 		414DBCD923AA785600BE8A27 /* ORSwiftSummaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ORSwiftSummaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		414DBCDD23AA785600BE8A27 /* ORSwiftSummaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORSwiftSummaryUITests.swift; sourceTree = "<group>"; };
 		414DBCDF23AA785600BE8A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415BF0D02591C00E009693C0 /* ORSwiftSummary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ORSwiftSummary-Bridging-Header.h"; sourceTree = "<group>"; };
 		418276032545850F00FC88E9 /* GyroMannager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroMannager.swift; sourceTree = "<group>"; };
 		418276042545850F00FC88E9 /* GyroscopeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroscopeImageView.swift; sourceTree = "<group>"; };
 		4184618124CA8AD000B689D2 /* RxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftVC.swift; sourceTree = "<group>"; };
@@ -264,6 +265,7 @@
 			children = (
 				4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */,
 				4141DDFD240775C300BEACBC /* NormalDemoVC.swift */,
+				415BF0D02591C00E009693C0 /* ORSwiftSummary-Bridging-Header.h */,
 			);
 			path = BasicVC;
 			sourceTree = "<group>";
@@ -552,6 +554,7 @@
 				TargetAttributes = {
 					414DBCB723AA785400BE8A27 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1170;
 					};
 					414DBCCD23AA785600BE8A27 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -900,6 +903,7 @@
 			baseConfigurationReference = 31B067CAF4BF8A1450E2D987 /* Pods-ORSwiftSummary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -916,6 +920,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.orilme.swift.cn;
 				PRODUCT_NAME = orilme_swift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ORSwiftSummary/BasicVC/ORSwiftSummary-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
@@ -927,6 +933,7 @@
 			baseConfigurationReference = 3481A53B6BE370A622B45907 /* Pods-ORSwiftSummary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "$(SRCROOT)/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -943,6 +950,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.orilme.swift.cn;
 				PRODUCT_NAME = orilme_swift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ORSwiftSummary/BasicVC/ORSwiftSummary-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

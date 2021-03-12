@@ -21,6 +21,7 @@ PODS:
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
+  - Reachability (3.2)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - MJRefresh (= 3.2.0)
   - ORModules (~> 0.8.0)
   - R.swift (= 5.0.3)
+  - Reachability (= 3.2)
   - RxCocoa
   - SnapKit (= 4.0.1)
   - TZImagePickerController (= 3.2.1)
@@ -45,6 +47,7 @@ SPEC REPOS:
     - MJRefresh
     - R.swift
     - R.swift.Library
+    - Reachability
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -60,12 +63,13 @@ SPEC CHECKSUMS:
   ORModules: 3590c7ae5524a8fcc0a00ba0faa8e3784f1d5471
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
 
-PODFILE CHECKSUM: 29c89e6fe5da0bfb78063fe8190704a2db156e91
+PODFILE CHECKSUM: c6df730380772504743ef6639d55167712ac82ac
 
 COCOAPODS: 1.9.1
