@@ -1,7 +1,21 @@
 PODS:
-  - CTMediator (44)
+  - Alamofire (4.9.1)
+  - BaseLibrary (0.0.1):
+    - BaseLibrary/Networking (= 0.0.1)
+  - BaseLibrary/Networking (0.0.1):
+    - lottie-ios (~> 3.1.2)
+    - MBProgressHUD (~> 1.1.0)
+    - Moya (~> 13.0)
+  - CTMediator (46)
   - HandyFrame (1.2.0)
+  - lottie-ios (3.1.9)
+  - MBProgressHUD (1.1.0)
   - MJRefresh (3.2.0)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
   - ORModules (0.8.0):
     - ORModules/A (= 0.8.0)
     - ORModules/A_Category (= 0.8.0)
@@ -21,33 +35,38 @@ PODS:
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
-  - Reachability (3.2)
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.1)
+  - Result (4.1.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
   - SnapKit (4.0.1)
   - TZImagePickerController (3.2.1)
 
 DEPENDENCIES:
+  - BaseLibrary (from `../DevLib`)
   - MJRefresh (= 3.2.0)
+  - Moya (= 13.0.1)
   - ORModules (~> 0.8.0)
   - R.swift (= 5.0.3)
-  - Reachability (= 3.2)
-  - RxCocoa
+  - RxCocoa (= 6.1.0)
   - SnapKit (= 4.0.1)
   - TZImagePickerController (= 3.2.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Alamofire
     - CTMediator
     - HandyFrame
+    - lottie-ios
+    - MBProgressHUD
     - MJRefresh
+    - Moya
     - R.swift
     - R.swift.Library
-    - Reachability
+    - Result
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -56,20 +75,29 @@ SPEC REPOS:
   https://github.com/orilme/ORSpec.git:
     - ORModules
 
+EXTERNAL SOURCES:
+  BaseLibrary:
+    :path: "../DevLib"
+
 SPEC CHECKSUMS:
-  CTMediator: 933dba523da87bf875e4a7e8728945fbc512f1d2
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  BaseLibrary: a13a10c782a7b9c3cf0c6437b1ca5c01758b6606
+  CTMediator: f1cf58d509fb3192086c367711f039efd769b907
   HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   ORModules: 3590c7ae5524a8fcc0a00ba0faa8e3784f1d5471
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
-  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
 
-PODFILE CHECKSUM: c6df730380772504743ef6639d55167712ac82ac
+PODFILE CHECKSUM: 57cf7e95ae4ad0f1a414dc47a6755753c87550cc
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0

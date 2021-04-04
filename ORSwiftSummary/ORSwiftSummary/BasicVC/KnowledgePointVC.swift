@@ -24,9 +24,17 @@ class KnowledgePointVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     var meunArr = [
     ["menuName": "Block 循环引用", "className": "BlockVC"],
+    ["menuName": "网络请求封装", "className": "NetWorkVC"],
     ["menuName": "自适应高度textView", "className": "AutoHeightVC"],
     ["menuName": "基本语法", "className": "BasicGrammarVC"],
     ["menuName": "GCD 信号量使用 弹窗依次弹出", "className": "GCDSemaphoreVC"],
+    ["menuName": "互斥锁", "className": "MutexLockVC"],
+    ["menuName": "互斥锁OC", "className": "MutexLockOCVC"],
+    ["menuName": "自旋锁", "className": "SpinlockVC"],
+    ["menuName": "读写锁", "className": "RWLockVC"],
+    ["menuName": "条件锁", "className": "ConditionLockVC"],
+    ["menuName": "递归锁", "className": "RecursiveLockVC"],
+    ["menuName": "信号量", "className": "SemaphoreLockVC"],
     ["menuName": "RxSwift", "className": "RxSwiftVC"],
     ["menuName": "Image 转 Data 清晰度对比", "className": "ImageChangeDataVC"],
     ["menuName": "自定义转场动画", "className": "PushAnimationVC"],
@@ -66,6 +74,13 @@ class KnowledgePointVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.deselectRow(at: indexPath, animated: true)
         let dict = meunArr[indexPath.row]
         let classStr:String = dict["className"] ?? ""
+        if classStr == "MutexLockOCVC" {
+            let vc = MutexLockOCVC()
+            vc.title = dict["menuName"]
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            return
+        }
         let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"]as!String
         let vcClass = NSClassFromString(namespace+"."+classStr)!as!UIViewController.Type
         let vc = vcClass.init()

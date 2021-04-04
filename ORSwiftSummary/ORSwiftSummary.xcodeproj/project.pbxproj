@@ -39,14 +39,25 @@
 		4141DE1C2407783400BEACBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4141DE182407783400BEACBC /* LaunchScreen.storyboard */; };
 		4141DE1D2407783400BEACBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE192407783400BEACBC /* AppDelegate.swift */; };
 		4141DE2124077B3D00BEACBC /* BasicGrammarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE2024077B3D00BEACBC /* BasicGrammarVC.swift */; };
+		41444D4525FB73F200035032 /* NetWorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41444D4425FB73F200035032 /* NetWorkVC.swift */; };
+		41444D4F25FB787600035032 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41444D4C25FB787500035032 /* BaseURL.swift */; };
+		41444D5025FB787600035032 /* NetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41444D4D25FB787500035032 /* NetConfig.swift */; };
+		41444D5125FB787600035032 /* ResultView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41444D4E25FB787500035032 /* ResultView+Extension.swift */; };
 		41471ACE2570B011005286FD /* KeyChainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41471ACC2570B011005286FD /* KeyChainVC.swift */; };
 		41471ACF2570B011005286FD /* KeyChainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41471ACD2570B011005286FD /* KeyChainVC.xib */; };
 		414DBCD323AA785600BE8A27 /* ORSwiftSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414DBCD223AA785600BE8A27 /* ORSwiftSummaryTests.swift */; };
 		414DBCDE23AA785600BE8A27 /* ORSwiftSummaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414DBCDD23AA785600BE8A27 /* ORSwiftSummaryUITests.swift */; };
+		416043602612C58900BB65C7 /* MutexLockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160435F2612C58900BB65C7 /* MutexLockVC.swift */; };
+		416043642612C59C00BB65C7 /* SpinlockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416043632612C59C00BB65C7 /* SpinlockVC.swift */; };
+		416043682612C5A900BB65C7 /* RWLockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416043672612C5A900BB65C7 /* RWLockVC.swift */; };
+		4160436C2612C5BF00BB65C7 /* ConditionLockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160436B2612C5BF00BB65C7 /* ConditionLockVC.swift */; };
+		416043702612C5D300BB65C7 /* SemaphoreLockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160436F2612C5D300BB65C7 /* SemaphoreLockVC.swift */; };
+		416043752612CB6800BB65C7 /* MutexLockOCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 416043742612CB6800BB65C7 /* MutexLockOCVC.m */; };
 		418276052545850F00FC88E9 /* GyroMannager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418276032545850F00FC88E9 /* GyroMannager.swift */; };
 		418276062545850F00FC88E9 /* GyroscopeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418276042545850F00FC88E9 /* GyroscopeImageView.swift */; };
 		4184618324CA8AD000B689D2 /* RxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4184618124CA8AD000B689D2 /* RxSwiftVC.swift */; };
 		4184618424CA8AD000B689D2 /* RxSwiftVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4184618224CA8AD000B689D2 /* RxSwiftVC.xib */; };
+		419BE3E826146334008101DB /* RecursiveLockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419BE3E726146334008101DB /* RecursiveLockVC.swift */; };
 		41CA97FC24F7A7F2009B6473 /* BlockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA97FB24F7A7F2009B6473 /* BlockVC.swift */; };
 		41D8AEE82410015500E2C7F1 /* TakePictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8AEE52410015500E2C7F1 /* TakePictureVC.swift */; };
 		41D8AEE92410015500E2C7F1 /* TakeIDcardPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8AEE62410015500E2C7F1 /* TakeIDcardPhotoVC.swift */; };
@@ -127,6 +138,10 @@
 		4141DE182407783400BEACBC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4141DE192407783400BEACBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4141DE2024077B3D00BEACBC /* BasicGrammarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGrammarVC.swift; sourceTree = "<group>"; };
+		41444D4425FB73F200035032 /* NetWorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkVC.swift; sourceTree = "<group>"; };
+		41444D4C25FB787500035032 /* BaseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		41444D4D25FB787500035032 /* NetConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetConfig.swift; sourceTree = "<group>"; };
+		41444D4E25FB787500035032 /* ResultView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ResultView+Extension.swift"; sourceTree = "<group>"; };
 		41471ACC2570B011005286FD /* KeyChainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainVC.swift; sourceTree = "<group>"; };
 		41471ACD2570B011005286FD /* KeyChainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyChainVC.xib; sourceTree = "<group>"; };
 		414DBCB823AA785400BE8A27 /* orilme_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = orilme_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,10 +152,18 @@
 		414DBCDD23AA785600BE8A27 /* ORSwiftSummaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORSwiftSummaryUITests.swift; sourceTree = "<group>"; };
 		414DBCDF23AA785600BE8A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		415BF0D02591C00E009693C0 /* ORSwiftSummary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ORSwiftSummary-Bridging-Header.h"; sourceTree = "<group>"; };
+		4160435F2612C58900BB65C7 /* MutexLockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexLockVC.swift; sourceTree = "<group>"; };
+		416043632612C59C00BB65C7 /* SpinlockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinlockVC.swift; sourceTree = "<group>"; };
+		416043672612C5A900BB65C7 /* RWLockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWLockVC.swift; sourceTree = "<group>"; };
+		4160436B2612C5BF00BB65C7 /* ConditionLockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionLockVC.swift; sourceTree = "<group>"; };
+		4160436F2612C5D300BB65C7 /* SemaphoreLockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreLockVC.swift; sourceTree = "<group>"; };
+		416043732612CB6800BB65C7 /* MutexLockOCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutexLockOCVC.h; sourceTree = "<group>"; };
+		416043742612CB6800BB65C7 /* MutexLockOCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutexLockOCVC.m; sourceTree = "<group>"; };
 		418276032545850F00FC88E9 /* GyroMannager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroMannager.swift; sourceTree = "<group>"; };
 		418276042545850F00FC88E9 /* GyroscopeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroscopeImageView.swift; sourceTree = "<group>"; };
 		4184618124CA8AD000B689D2 /* RxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftVC.swift; sourceTree = "<group>"; };
 		4184618224CA8AD000B689D2 /* RxSwiftVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftVC.xib; sourceTree = "<group>"; };
+		419BE3E726146334008101DB /* RecursiveLockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursiveLockVC.swift; sourceTree = "<group>"; };
 		41CA97FB24F7A7F2009B6473 /* BlockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockVC.swift; sourceTree = "<group>"; };
 		41D8AEE52410015500E2C7F1 /* TakePictureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePictureVC.swift; sourceTree = "<group>"; };
 		41D8AEE62410015500E2C7F1 /* TakeIDcardPhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeIDcardPhotoVC.swift; sourceTree = "<group>"; };
@@ -234,6 +257,14 @@
 			isa = PBXGroup;
 			children = (
 				411623F9243081E600832DBD /* GCDSemaphoreVC.swift */,
+				4160435F2612C58900BB65C7 /* MutexLockVC.swift */,
+				416043732612CB6800BB65C7 /* MutexLockOCVC.h */,
+				416043742612CB6800BB65C7 /* MutexLockOCVC.m */,
+				416043632612C59C00BB65C7 /* SpinlockVC.swift */,
+				416043672612C5A900BB65C7 /* RWLockVC.swift */,
+				4160436B2612C5BF00BB65C7 /* ConditionLockVC.swift */,
+				419BE3E726146334008101DB /* RecursiveLockVC.swift */,
+				4160436F2612C5D300BB65C7 /* SemaphoreLockVC.swift */,
 			);
 			path = Multithreading;
 			sourceTree = "<group>";
@@ -265,7 +296,6 @@
 			children = (
 				4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */,
 				4141DDFD240775C300BEACBC /* NormalDemoVC.swift */,
-				415BF0D02591C00E009693C0 /* ORSwiftSummary-Bridging-Header.h */,
 			);
 			path = BasicVC;
 			sourceTree = "<group>";
@@ -285,6 +315,7 @@
 		4141DE012407761100BEACBC /* KnowledgePoint */ = {
 			isa = PBXGroup;
 			children = (
+				41444D4325FB73DA00035032 /* NetWork */,
 				41471ACA2570AF4C005286FD /* Cache */,
 				4104BD7025650B84000A2D68 /* Animation */,
 				41CA97FA24F7A7C5009B6473 /* Block */,
@@ -333,6 +364,7 @@
 				4141DE172407783400BEACBC /* Assets.xcassets */,
 				4141DE162407783400BEACBC /* Info.plist */,
 				4141DE182407783400BEACBC /* LaunchScreen.storyboard */,
+				415BF0D02591C00E009693C0 /* ORSwiftSummary-Bridging-Header.h */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -352,6 +384,17 @@
 				41D8AEE42410012F00E2C7F1 /* Two */,
 			);
 			path = "TakePhoto(相机拍身份证)";
+			sourceTree = "<group>";
+		};
+		41444D4325FB73DA00035032 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				41444D4425FB73F200035032 /* NetWorkVC.swift */,
+				41444D4C25FB787500035032 /* BaseURL.swift */,
+				41444D4D25FB787500035032 /* NetConfig.swift */,
+				41444D4E25FB787500035032 /* ResultView+Extension.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		41471ACA2570AF4C005286FD /* Cache */ = {
@@ -715,21 +758,29 @@
 				41D8AEEA2410015500E2C7F1 /* TakePhotoTool.swift in Sources */,
 				418276052545850F00FC88E9 /* GyroMannager.swift in Sources */,
 				41134D102554F2DA0013CB66 /* ImageMediaPreviewCell.swift in Sources */,
+				41444D5025FB787600035032 /* NetConfig.swift in Sources */,
 				41221792256F8C3C0051D393 /* main.swift in Sources */,
 				41D8AEE92410015500E2C7F1 /* TakeIDcardPhotoVC.swift in Sources */,
 				411623FA243081E600832DBD /* GCDSemaphoreVC.swift in Sources */,
 				4141DE1D2407783400BEACBC /* AppDelegate.swift in Sources */,
+				419BE3E826146334008101DB /* RecursiveLockVC.swift in Sources */,
 				4104BD7225650BC5000A2D68 /* PushAnimationVC.swift in Sources */,
 				4141DE0E2407767800BEACBC /* UIDevice+Extension.swift in Sources */,
+				416043642612C59C00BB65C7 /* SpinlockVC.swift in Sources */,
+				41444D4525FB73F200035032 /* NetWorkVC.swift in Sources */,
 				4141DDFE240775C300BEACBC /* KnowledgePointVC.swift in Sources */,
 				4141DE122407768300BEACBC /* ClipImageViewController.swift in Sources */,
+				4160436C2612C5BF00BB65C7 /* ConditionLockVC.swift in Sources */,
+				416043602612C58900BB65C7 /* MutexLockVC.swift in Sources */,
 				41D8AEF42410015D00E2C7F1 /* DXIDCardFloatingView.swift in Sources */,
+				416043682612C5A900BB65C7 /* RWLockVC.swift in Sources */,
 				4141DE142407768300BEACBC /* ClipImageTool.swift in Sources */,
 				41D8AEF72410015D00E2C7F1 /* DXIDCardCameraController.swift in Sources */,
 				4141DE132407768300BEACBC /* ClipImageShowVC.swift in Sources */,
 				4184618324CA8AD000B689D2 /* RxSwiftVC.swift in Sources */,
 				41D8AEF52410015D00E2C7F1 /* UIImage+FixOrientation.swift in Sources */,
 				418276062545850F00FC88E9 /* GyroscopeImageView.swift in Sources */,
+				41444D4F25FB787600035032 /* BaseURL.swift in Sources */,
 				4141DDFF240775C300BEACBC /* NormalDemoVC.swift in Sources */,
 				4141DE2124077B3D00BEACBC /* BasicGrammarVC.swift in Sources */,
 				41134D092554EDFC0013CB66 /* CMCollectionVC.swift in Sources */,
@@ -737,8 +788,10 @@
 				410938EC24C33A9300CD1C22 /* PopFilterView.swift in Sources */,
 				4141DE0D2407767800BEACBC /* UIScreen+Extension.swift in Sources */,
 				41D8AEF22410015D00E2C7F1 /* TakeIDcardPhotoTwoVC.swift in Sources */,
+				416043702612C5D300BB65C7 /* SemaphoreLockVC.swift in Sources */,
 				41471ACE2570B011005286FD /* KeyChainVC.swift in Sources */,
 				41CA97FC24F7A7F2009B6473 /* BlockVC.swift in Sources */,
+				416043752612CB6800BB65C7 /* MutexLockOCVC.m in Sources */,
 				4104BD7425650D0B000A2D68 /* CustomAnimatePush.swift in Sources */,
 				4141DE082407766F00BEACBC /* AutoHeightVC.swift in Sources */,
 				41170612253D2DC0001FAE89 /* CoreMotionVC.swift in Sources */,
@@ -747,6 +800,7 @@
 				41353D9A256DF641008182BE /* AnimationVC.swift in Sources */,
 				410938D824C3318600CD1C22 /* PopoverViewVC.swift in Sources */,
 				4141DE0A2407766F00BEACBC /* FBTopSelectCell.swift in Sources */,
+				41444D5125FB787600035032 /* ResultView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,7 +974,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.orilme.swift.cn;
 				PRODUCT_NAME = orilme_swift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ORSwiftSummary/BasicVC/ORSwiftSummary-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ORSwiftSummary/Resource/ORSwiftSummary-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -950,7 +1004,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.orilme.swift.cn;
 				PRODUCT_NAME = orilme_swift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ORSwiftSummary/BasicVC/ORSwiftSummary-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ORSwiftSummary/Resource/ORSwiftSummary-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
