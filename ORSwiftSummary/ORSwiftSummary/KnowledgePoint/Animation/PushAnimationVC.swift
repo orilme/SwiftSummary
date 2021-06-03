@@ -65,6 +65,4 @@ class PushAnimationVC: UIViewController, UINavigationControllerDelegate {
         }
     }
     
-    
-
 }

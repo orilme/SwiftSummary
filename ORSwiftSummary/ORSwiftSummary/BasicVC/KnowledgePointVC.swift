@@ -11,7 +11,7 @@ import UIKit
 class KnowledgePointVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     lazy var mainTableView: UITableView = {
-        let tableView = UITableView.init(frame: CGRect(x: 0, y: UIScreen.NAVHEIGHT, width: UIScreen.WIDTH, height: UIScreen.HEIGHT - UIScreen.IPHONXSafeBottom - UIScreen.NAVHEIGHT), style: .plain)
+        let tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.WIDTH, height: UIScreen.HEIGHT - UIScreen.IPHONXSafeBottom - UIScreen.NAVHEIGHT - 80), style: .plain)
         tableView.separatorStyle = .singleLine
         tableView.backgroundColor = .lightGray
         tableView.delegate = self
@@ -25,7 +25,7 @@ class KnowledgePointVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     var meunArr = [
     ["menuName": "Block 循环引用", "className": "BlockVC"],
     ["menuName": "网络请求封装", "className": "NetWorkVC"],
-    ["menuName": "自适应高度textView", "className": "AutoHeightVC"],
+    ["menuName": "自适应高度textView", "className": "AutoHeightTextViewVC"],
     ["menuName": "基本语法", "className": "BasicGrammarVC"],
     ["menuName": "GCD 信号量使用 弹窗依次弹出", "className": "GCDSemaphoreVC"],
     ["menuName": "互斥锁", "className": "MutexLockVC"],
@@ -39,6 +39,8 @@ class KnowledgePointVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     ["menuName": "Image 转 Data 清晰度对比", "className": "ImageChangeDataVC"],
     ["menuName": "自定义转场动画", "className": "PushAnimationVC"],
     ["menuName": "动画", "className": "AnimationVC"],
+    ["menuName": "BasicAnimation", "className": "CABasicAnimationVC"],
+    ["menuName": "CAScaleVC", "className": "CAScaleVC"],
     ["menuName": "钥匙串存储密码", "className": "KeyChainVC"],
     ]
     
@@ -46,17 +48,20 @@ class KnowledgePointVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.navigationItem.title = "基础知识点~~";
+        self.navigationController?.navigationBar.isTranslucent = false
         if #available(iOS 11.0, *) {
             self.mainTableView.contentInsetAdjustmentBehavior = .never
         }else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
         
+        self.mainTableView.reloadData()
+        
         setupUI()
     }
     
     func setupUI() {
-
+        
     }
     
     //MARK: - UITableViewDelegate, UITableViewDataSource

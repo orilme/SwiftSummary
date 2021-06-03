@@ -1,5 +1,5 @@
 //
-//  FBTopSelectCell.swift
+//  AutoHeightTextViewCell.swift
 //  ORSwiftSummary
 //
 //  Created by orilme on 2020/2/24.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FBTopSelectCell: UITableViewCell {
+class AutoHeightTextViewCell: UITableViewCell {
 
     @IBOutlet weak var textView: UITextView!
     

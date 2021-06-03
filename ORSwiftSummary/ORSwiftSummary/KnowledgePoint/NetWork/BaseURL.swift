@@ -67,10 +67,8 @@ enum BaseURLType: String {
         return self.baseURL(type: self.currentType)!
     }
     
-    
     /// 当前环境类型
     static var currentType: BaseURLType{
-        
         #if DEBUG
         return .beta
         #else

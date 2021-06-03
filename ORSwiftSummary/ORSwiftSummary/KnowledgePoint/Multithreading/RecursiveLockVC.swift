@@ -13,6 +13,7 @@ class RecursiveLockVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .green
         
         let button1 = UIButton.init(frame: CGRect(x: 30, y: 100, width: 200, height: 100))
         button1.setTitle("RecursiveLock", for: .normal)

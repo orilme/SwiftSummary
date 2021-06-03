@@ -14,6 +14,7 @@
 		410938D824C3318600CD1C22 /* PopoverViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938D724C3318600CD1C22 /* PopoverViewVC.swift */; };
 		410938EA24C33A4C00CD1C22 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938E924C33A4C00CD1C22 /* PopoverView.swift */; };
 		410938EC24C33A9300CD1C22 /* PopFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938EB24C33A9300CD1C22 /* PopFilterView.swift */; };
+		410A4A7726687A2E008BB530 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A4A7626687A2E008BB530 /* NSObject+Extension.swift */; };
 		410B18AD24082F550043B1B4 /* Pods_ORSwiftSummary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1117CE648646AF54B60476 /* Pods_ORSwiftSummary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41134D092554EDFC0013CB66 /* CMCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41134D082554EDFC0013CB66 /* CMCollectionVC.swift */; };
 		41134D0C2554F2820013CB66 /* MultimediaPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41134D0A2554F2820013CB66 /* MultimediaPreviewView.swift */; };
@@ -23,13 +24,16 @@
 		41170612253D2DC0001FAE89 /* CoreMotionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41170610253D2DC0001FAE89 /* CoreMotionVC.swift */; };
 		41185499256B8F53009FB5D1 /* CustomPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41185498256B8F53009FB5D1 /* CustomPush.swift */; };
 		41221792256F8C3C0051D393 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41221791256F8C3C0051D393 /* main.swift */; };
+		412A4DE82662911500EFA515 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A4DE72662911500EFA515 /* TestVC.swift */; };
+		412F5EED2643903C00F77C6D /* CABasicAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F5EEC2643903C00F77C6D /* CABasicAnimationVC.swift */; };
+		412F5F0A2643EFA100F77C6D /* CAScaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F5F092643EFA100F77C6D /* CAScaleVC.swift */; };
 		41353D9A256DF641008182BE /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41353D99256DF641008182BE /* AnimationVC.swift */; };
 		4135EFC925528E0E003D3914 /* ImageChangeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4135EFC825528E0E003D3914 /* ImageChangeDataVC.swift */; };
 		4141DDFE240775C300BEACBC /* KnowledgePointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */; };
 		4141DDFF240775C300BEACBC /* NormalDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DDFD240775C300BEACBC /* NormalDemoVC.swift */; };
-		4141DE082407766F00BEACBC /* AutoHeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE052407766F00BEACBC /* AutoHeightVC.swift */; };
-		4141DE092407766F00BEACBC /* FBTopSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4141DE062407766F00BEACBC /* FBTopSelectCell.xib */; };
-		4141DE0A2407766F00BEACBC /* FBTopSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE072407766F00BEACBC /* FBTopSelectCell.swift */; };
+		4141DE082407766F00BEACBC /* AutoHeightTextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE052407766F00BEACBC /* AutoHeightTextViewVC.swift */; };
+		4141DE092407766F00BEACBC /* AutoHeightTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4141DE062407766F00BEACBC /* AutoHeightTextViewCell.xib */; };
+		4141DE0A2407766F00BEACBC /* AutoHeightTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE072407766F00BEACBC /* AutoHeightTextViewCell.swift */; };
 		4141DE0D2407767800BEACBC /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE0B2407767800BEACBC /* UIScreen+Extension.swift */; };
 		4141DE0E2407767800BEACBC /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE0C2407767800BEACBC /* UIDevice+Extension.swift */; };
 		4141DE122407768300BEACBC /* ClipImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4141DE0F2407768200BEACBC /* ClipImageViewController.swift */; };
@@ -113,6 +117,7 @@
 		410938D724C3318600CD1C22 /* PopoverViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewVC.swift; sourceTree = "<group>"; };
 		410938E924C33A4C00CD1C22 /* PopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 		410938EB24C33A9300CD1C22 /* PopFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopFilterView.swift; sourceTree = "<group>"; };
+		410A4A7626687A2E008BB530 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		41134D082554EDFC0013CB66 /* CMCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMCollectionVC.swift; sourceTree = "<group>"; };
 		41134D0A2554F2820013CB66 /* MultimediaPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultimediaPreviewView.swift; sourceTree = "<group>"; };
 		41134D0E2554F2DA0013CB66 /* ImageMediaPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMediaPreviewCell.swift; sourceTree = "<group>"; };
@@ -121,13 +126,16 @@
 		41170610253D2DC0001FAE89 /* CoreMotionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionVC.swift; sourceTree = "<group>"; };
 		41185498256B8F53009FB5D1 /* CustomPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPush.swift; sourceTree = "<group>"; };
 		41221791256F8C3C0051D393 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		412A4DE72662911500EFA515 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		412F5EEC2643903C00F77C6D /* CABasicAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABasicAnimationVC.swift; sourceTree = "<group>"; };
+		412F5F092643EFA100F77C6D /* CAScaleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAScaleVC.swift; sourceTree = "<group>"; };
 		41353D99256DF641008182BE /* AnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
 		4135EFC825528E0E003D3914 /* ImageChangeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChangeDataVC.swift; sourceTree = "<group>"; };
 		4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgePointVC.swift; sourceTree = "<group>"; };
 		4141DDFD240775C300BEACBC /* NormalDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalDemoVC.swift; sourceTree = "<group>"; };
-		4141DE052407766F00BEACBC /* AutoHeightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHeightVC.swift; sourceTree = "<group>"; };
-		4141DE062407766F00BEACBC /* FBTopSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBTopSelectCell.xib; sourceTree = "<group>"; };
-		4141DE072407766F00BEACBC /* FBTopSelectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBTopSelectCell.swift; sourceTree = "<group>"; };
+		4141DE052407766F00BEACBC /* AutoHeightTextViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHeightTextViewVC.swift; sourceTree = "<group>"; };
+		4141DE062407766F00BEACBC /* AutoHeightTextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoHeightTextViewCell.xib; sourceTree = "<group>"; };
+		4141DE072407766F00BEACBC /* AutoHeightTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHeightTextViewCell.swift; sourceTree = "<group>"; };
 		4141DE0B2407767800BEACBC /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		4141DE0C2407767800BEACBC /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		4141DE0F2407768200BEACBC /* ClipImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipImageViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +239,8 @@
 				4104BD7525650D32000A2D68 /* PushedVC.swift */,
 				4104BD7325650D0B000A2D68 /* CustomAnimatePush.swift */,
 				41185498256B8F53009FB5D1 /* CustomPush.swift */,
+				412F5EEC2643903C00F77C6D /* CABasicAnimationVC.swift */,
+				412F5F092643EFA100F77C6D /* CAScaleVC.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -296,6 +306,7 @@
 			children = (
 				4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */,
 				4141DDFD240775C300BEACBC /* NormalDemoVC.swift */,
+				412A4DE72662911500EFA515 /* TestVC.swift */,
 			);
 			path = BasicVC;
 			sourceTree = "<group>";
@@ -332,6 +343,7 @@
 			children = (
 				4141DE0C2407767800BEACBC /* UIDevice+Extension.swift */,
 				4141DE0B2407767800BEACBC /* UIScreen+Extension.swift */,
+				410A4A7626687A2E008BB530 /* NSObject+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -349,9 +361,9 @@
 		4141DE042407764800BEACBC /* TextViewAutoHeight */ = {
 			isa = PBXGroup;
 			children = (
-				4141DE052407766F00BEACBC /* AutoHeightVC.swift */,
-				4141DE072407766F00BEACBC /* FBTopSelectCell.swift */,
-				4141DE062407766F00BEACBC /* FBTopSelectCell.xib */,
+				4141DE052407766F00BEACBC /* AutoHeightTextViewVC.swift */,
+				4141DE072407766F00BEACBC /* AutoHeightTextViewCell.swift */,
+				4141DE062407766F00BEACBC /* AutoHeightTextViewCell.xib */,
 			);
 			path = TextViewAutoHeight;
 			sourceTree = "<group>";
@@ -636,7 +648,7 @@
 			files = (
 				4184618424CA8AD000B689D2 /* RxSwiftVC.xib in Resources */,
 				4141DE1C2407783400BEACBC /* LaunchScreen.storyboard in Resources */,
-				4141DE092407766F00BEACBC /* FBTopSelectCell.xib in Resources */,
+				4141DE092407766F00BEACBC /* AutoHeightTextViewCell.xib in Resources */,
 				41D8AEF32410015D00E2C7F1 /* TakeIDcardPhotoTwoVC.xib in Resources */,
 				41471ACF2570B011005286FD /* KeyChainVC.xib in Resources */,
 				4141DE1B2407783400BEACBC /* Assets.xcassets in Resources */,
@@ -752,13 +764,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412F5F0A2643EFA100F77C6D /* CAScaleVC.swift in Sources */,
 				410938EA24C33A4C00CD1C22 /* PopoverView.swift in Sources */,
 				41D8AEE82410015500E2C7F1 /* TakePictureVC.swift in Sources */,
 				41134D0C2554F2820013CB66 /* MultimediaPreviewView.swift in Sources */,
 				41D8AEEA2410015500E2C7F1 /* TakePhotoTool.swift in Sources */,
 				418276052545850F00FC88E9 /* GyroMannager.swift in Sources */,
 				41134D102554F2DA0013CB66 /* ImageMediaPreviewCell.swift in Sources */,
+				410A4A7726687A2E008BB530 /* NSObject+Extension.swift in Sources */,
 				41444D5025FB787600035032 /* NetConfig.swift in Sources */,
+				412A4DE82662911500EFA515 /* TestVC.swift in Sources */,
 				41221792256F8C3C0051D393 /* main.swift in Sources */,
 				41D8AEE92410015500E2C7F1 /* TakeIDcardPhotoVC.swift in Sources */,
 				411623FA243081E600832DBD /* GCDSemaphoreVC.swift in Sources */,
@@ -792,14 +807,15 @@
 				41471ACE2570B011005286FD /* KeyChainVC.swift in Sources */,
 				41CA97FC24F7A7F2009B6473 /* BlockVC.swift in Sources */,
 				416043752612CB6800BB65C7 /* MutexLockOCVC.m in Sources */,
+				412F5EED2643903C00F77C6D /* CABasicAnimationVC.swift in Sources */,
 				4104BD7425650D0B000A2D68 /* CustomAnimatePush.swift in Sources */,
-				4141DE082407766F00BEACBC /* AutoHeightVC.swift in Sources */,
+				4141DE082407766F00BEACBC /* AutoHeightTextViewVC.swift in Sources */,
 				41170612253D2DC0001FAE89 /* CoreMotionVC.swift in Sources */,
 				4104BD7625650D32000A2D68 /* PushedVC.swift in Sources */,
 				41185499256B8F53009FB5D1 /* CustomPush.swift in Sources */,
 				41353D9A256DF641008182BE /* AnimationVC.swift in Sources */,
 				410938D824C3318600CD1C22 /* PopoverViewVC.swift in Sources */,
-				4141DE0A2407766F00BEACBC /* FBTopSelectCell.swift in Sources */,
+				4141DE0A2407766F00BEACBC /* AutoHeightTextViewCell.swift in Sources */,
 				41444D5125FB787600035032 /* ResultView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

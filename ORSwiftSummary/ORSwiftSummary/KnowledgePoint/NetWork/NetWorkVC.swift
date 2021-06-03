@@ -16,7 +16,7 @@ class NetWorkVC: UIViewController {
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .blue
-        request(AgentStoreNet.getInTheCompany).loading(onView: view).failure { (error) in
+        request(TestNet.getInTheCompany).loading(onView: view).failure { (error) in
             
         }.responseObject { (model: InTheCompanyModel) in
             print("NetWorkVC---", model.branchId)
@@ -30,11 +30,11 @@ class InTheCompanyModel: Codable {
     var branchId : String?
 }
 
-enum AgentStoreNet {
+enum TestNet {
     case getInTheCompany
 }
 
-extension AgentStoreNet: NetTargetType {
+extension TestNet: NetTargetType {
     var target: NetTarget {
         switch self {
             case .getInTheCompany:

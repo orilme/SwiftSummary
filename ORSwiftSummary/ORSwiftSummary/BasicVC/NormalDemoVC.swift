@@ -11,7 +11,7 @@ import UIKit
 class NormalDemoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     lazy var mainTableView: UITableView = {
-        let tableView = UITableView.init(frame: CGRect(x: 0, y: UIScreen.NAVHEIGHT, width: UIScreen.WIDTH, height: UIScreen.HEIGHT - UIScreen.IPHONXSafeBottom - UIScreen.NAVHEIGHT), style: .plain)
+        let tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.WIDTH, height: UIScreen.HEIGHT - UIScreen.IPHONXSafeBottom - UIScreen.NAVHEIGHT - 80), style: .plain)
         tableView.separatorStyle = .singleLine
         tableView.backgroundColor = .lightGray
         tableView.delegate = self
@@ -23,6 +23,7 @@ class NormalDemoVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     }()
     
     var meunArr = [
+    ["menuName": "TestVC测试用", "className": "TestVC"],
     ["menuName": "裁切图片", "className": "ClipImageShowVC"],
     ["menuName": "相机拍身份证", "className": "TakeIDcardPhotoVC"],
     ["menuName": "相机拍身份证2", "className": "TakeIDcardPhotoTwoVC"],
@@ -35,12 +36,14 @@ class NormalDemoVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.navigationItem.title = "Demo";
+        self.navigationController?.navigationBar.isTranslucent = false
         if #available(iOS 11.0, *) {
             self.mainTableView.contentInsetAdjustmentBehavior = .never
         }else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
         
+        self.mainTableView.reloadData()
         setupUI()
     }
     

@@ -14,6 +14,7 @@ class SpinlockVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .green
         test_unfair_lock()
     }
     

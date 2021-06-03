@@ -1,5 +1,5 @@
 //
-//  AutoHeightVC.swift
+//  AutoHeightTextViewVC.swift
 //  ORSwiftSummary
 //
 //  Created by orilme on 2020/2/27.
@@ -8,17 +8,7 @@
 
 import UIKit
 
-public extension NSObject {
-    public var className: String {
-        return String(describing: type(of: self))
-    }
-    
-    public class var className: String {
-        return String(describing: self)
-    }
-}
-
-class AutoHeightVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
+class AutoHeightTextViewVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate {
     
     //每次内容变化时，调用tableView的刷新方法
     func textViewDidChange(_ textView: UITextView) {
@@ -26,7 +16,6 @@ class AutoHeightVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         mainTableView.beginUpdates()
         mainTableView.endUpdates()
     }
-
     
     lazy var mainTableView: UITableView = {
         let tableView = UITableView.init(frame: CGRect(x: 0, y: UIScreen.NAVHEIGHT, width: UIScreen.WIDTH, height: UIScreen.HEIGHT - UIScreen.IPHONXSafeBottom - UIScreen.NAVHEIGHT), style: .plain)
@@ -35,7 +24,7 @@ class AutoHeightVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 115
-        tableView.register(UINib.init(nibName: FBTopSelectCell.className, bundle: nil), forCellReuseIdentifier: FBTopSelectCell.className)
+        tableView.register(UINib.init(nibName: AutoHeightTextViewCell.className, bundle: nil), forCellReuseIdentifier: AutoHeightTextViewCell.className)
         self.view.addSubview(tableView)
         return tableView
     }()
@@ -62,7 +51,7 @@ class AutoHeightVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: FBTopSelectCell.className) as! FBTopSelectCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: AutoHeightTextViewCell.className) as! AutoHeightTextViewCell
         cell.textView.delegate = self
         cell.backgroundColor = UIColor.red
         return cell

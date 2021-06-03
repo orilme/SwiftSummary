@@ -20,7 +20,7 @@ class RWLockVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        self.view.backgroundColor = .green
         let button1 = UIButton.init(frame: CGRect(x: 30, y: 100, width: 200, height: 100))
         button1.setTitle("读写锁(pthread_rwlock_t)", for: .normal)
         button1.addTarget(self, action: #selector(rwlockTest), for: .touchUpInside)
