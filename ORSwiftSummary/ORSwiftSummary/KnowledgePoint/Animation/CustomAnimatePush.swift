@@ -22,7 +22,7 @@ class CustomAnimatePush: NSObject, UIViewControllerAnimatedTransitioning, CAAnim
         
         // 获取动画的源控制器和目标控制器
         let fromVC = transitionContext.viewController(forKey: .from) as! PushAnimationVC
-        let toVC = transitionContext.viewController(forKey: .to) as! PushedVC
+        let toVC = transitionContext.viewController(forKey: .to) as! CustomPushedVC
 
         //获取容器视图
         let contView = transitionContext.containerView

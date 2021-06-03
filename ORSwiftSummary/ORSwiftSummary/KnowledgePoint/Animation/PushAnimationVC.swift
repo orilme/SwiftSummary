@@ -53,7 +53,7 @@ class PushAnimationVC: UIViewController, UINavigationControllerDelegate {
     
     @objc func pushVC(btn : UIButton) {
         button = btn
-        let vc = PushedVC()
+        let vc = CustomPushedVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

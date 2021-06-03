@@ -37,8 +37,6 @@ class CABasicAnimationVC: UIViewController {
     }
     
     @objc func pushVC(btn : UIButton) {
-        print("ssss----------------")
-        
 //        contianerView.layer.anchorPoint = CGPoint(x: 0.5, y: 0)
 //
 //        let animation = CABasicAnimation()

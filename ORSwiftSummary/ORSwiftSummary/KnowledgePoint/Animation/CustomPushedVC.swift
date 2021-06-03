@@ -1,5 +1,5 @@
 //
-//  PushedVC.swift
+//  CustomPushedVC.swift
 //  ORSwiftSummary
 //
 //  Created by orilme on 2020/11/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PushedVC: UIViewController {
+class CustomPushedVC: UIViewController {
     
     //动画过渡转场
     var transitionAnimation = CustomPush()
@@ -26,7 +26,6 @@ class PushedVC: UIViewController {
         imageView.image = UIImage(named: "img_back")
         imageView.backgroundColor = .red
         self.view.addSubview(imageView)
-        
 
     }
     

@@ -20,7 +20,7 @@ class CustomPush: NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDe
         
         // 获取动画的源控制器和目标控制器
         let fromVC = transitionContext.viewController(forKey: .from) as! PushAnimationVC
-        let toVC = transitionContext.viewController(forKey: .to) as! PushedVC
+        let toVC = transitionContext.viewController(forKey: .to) as! CustomPushedVC
         
 
         //这里有个重要的概念containerView，如果要对视图做转场动画，视图就必须要加入containerView中才能进行，可以理解containerView管理着所有做转场动画的视图

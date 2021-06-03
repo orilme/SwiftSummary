@@ -10,7 +10,7 @@
 		1DC797182544842DB0426D8A /* Pods_ORSwiftSummaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6B05B7DE4568C6ABAD7334 /* Pods_ORSwiftSummaryTests.framework */; };
 		4104BD7225650BC5000A2D68 /* PushAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104BD7125650BC5000A2D68 /* PushAnimationVC.swift */; };
 		4104BD7425650D0B000A2D68 /* CustomAnimatePush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104BD7325650D0B000A2D68 /* CustomAnimatePush.swift */; };
-		4104BD7625650D32000A2D68 /* PushedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104BD7525650D32000A2D68 /* PushedVC.swift */; };
+		4104BD7625650D32000A2D68 /* CustomPushedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4104BD7525650D32000A2D68 /* CustomPushedVC.swift */; };
 		410938D824C3318600CD1C22 /* PopoverViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938D724C3318600CD1C22 /* PopoverViewVC.swift */; };
 		410938EA24C33A4C00CD1C22 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938E924C33A4C00CD1C22 /* PopoverView.swift */; };
 		410938EC24C33A9300CD1C22 /* PopFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410938EB24C33A9300CD1C22 /* PopFilterView.swift */; };
@@ -113,7 +113,7 @@
 		3481A53B6BE370A622B45907 /* Pods-ORSwiftSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORSwiftSummary.release.xcconfig"; path = "Target Support Files/Pods-ORSwiftSummary/Pods-ORSwiftSummary.release.xcconfig"; sourceTree = "<group>"; };
 		4104BD7125650BC5000A2D68 /* PushAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAnimationVC.swift; sourceTree = "<group>"; };
 		4104BD7325650D0B000A2D68 /* CustomAnimatePush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatePush.swift; sourceTree = "<group>"; };
-		4104BD7525650D32000A2D68 /* PushedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushedVC.swift; sourceTree = "<group>"; };
+		4104BD7525650D32000A2D68 /* CustomPushedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushedVC.swift; sourceTree = "<group>"; };
 		410938D724C3318600CD1C22 /* PopoverViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewVC.swift; sourceTree = "<group>"; };
 		410938E924C33A4C00CD1C22 /* PopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 		410938EB24C33A9300CD1C22 /* PopFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopFilterView.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 			children = (
 				41353D99256DF641008182BE /* AnimationVC.swift */,
 				4104BD7125650BC5000A2D68 /* PushAnimationVC.swift */,
-				4104BD7525650D32000A2D68 /* PushedVC.swift */,
+				4104BD7525650D32000A2D68 /* CustomPushedVC.swift */,
 				4104BD7325650D0B000A2D68 /* CustomAnimatePush.swift */,
 				41185498256B8F53009FB5D1 /* CustomPush.swift */,
 				412F5EEC2643903C00F77C6D /* CABasicAnimationVC.swift */,
@@ -811,7 +811,7 @@
 				4104BD7425650D0B000A2D68 /* CustomAnimatePush.swift in Sources */,
 				4141DE082407766F00BEACBC /* AutoHeightTextViewVC.swift in Sources */,
 				41170612253D2DC0001FAE89 /* CoreMotionVC.swift in Sources */,
-				4104BD7625650D32000A2D68 /* PushedVC.swift in Sources */,
+				4104BD7625650D32000A2D68 /* CustomPushedVC.swift in Sources */,
 				41185499256B8F53009FB5D1 /* CustomPush.swift in Sources */,
 				41353D9A256DF641008182BE /* AnimationVC.swift in Sources */,
 				410938D824C3318600CD1C22 /* PopoverViewVC.swift in Sources */,
