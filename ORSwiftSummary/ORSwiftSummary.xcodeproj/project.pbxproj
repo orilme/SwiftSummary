@@ -72,6 +72,18 @@
 		41D8AEF52410015D00E2C7F1 /* UIImage+FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8AEEF2410015D00E2C7F1 /* UIImage+FixOrientation.swift */; };
 		41D8AEF62410015D00E2C7F1 /* DXIDCardCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41D8AEF02410015D00E2C7F1 /* DXIDCardCamera.bundle */; };
 		41D8AEF72410015D00E2C7F1 /* DXIDCardCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D8AEF12410015D00E2C7F1 /* DXIDCardCameraController.swift */; };
+		4206285A2693F5C3004DBEB9 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420628592693F5C3004DBEB9 /* ScanView.swift */; };
+		420628622693F5CF004DBEB9 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206285B2693F5CE004DBEB9 /* Platform.swift */; };
+		420628632693F5CF004DBEB9 /* UIViewController+ScanExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206285C2693F5CE004DBEB9 /* UIViewController+ScanExtensions.swift */; };
+		420628642693F5CF004DBEB9 /* CornerLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206285D2693F5CE004DBEB9 /* CornerLocation.swift */; };
+		420628652693F5CF004DBEB9 /* ScanAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206285E2693F5CF004DBEB9 /* ScanAnimation.swift */; };
+		420628672693F5CF004DBEB9 /* LimitsTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420628602693F5CF004DBEB9 /* LimitsTools.swift */; };
+		420628682693F5CF004DBEB9 /* UIImage+ScanExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420628612693F5CF004DBEB9 /* UIImage+ScanExtensions.swift */; };
+		4206286C2693F5D7004DBEB9 /* AccessPhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420628692693F5D6004DBEB9 /* AccessPhotoAlbumViewController.swift */; };
+		4206286D2693F5D7004DBEB9 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206286A2693F5D6004DBEB9 /* ScannerViewController.swift */; };
+		4206286E2693F5D7004DBEB9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4206286B2693F5D7004DBEB9 /* CameraViewController.swift */; };
+		420628792693F5E1004DBEB9 /* QRCodeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420628732693F5E1004DBEB9 /* QRCodeModule.swift */; };
+		42A2F3A926954E4700BCCC1A /* AVMetadataObject+ScanExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A2F3A826954E4700BCCC1A /* AVMetadataObject+ScanExtensions.swift */; };
 		7799914214FB1E248B21EFB3 /* Pods_ORSwiftSummaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34559EDDE49A45CAF959406 /* Pods_ORSwiftSummaryUITests.framework */; };
 		922E9C16C6485D079AE84B00 /* Pods_ORSwiftSummary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1117CE648646AF54B60476 /* Pods_ORSwiftSummary.framework */; };
 /* End PBXBuildFile section */
@@ -182,6 +194,18 @@
 		41D8AEEF2410015D00E2C7F1 /* UIImage+FixOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+FixOrientation.swift"; sourceTree = "<group>"; };
 		41D8AEF02410015D00E2C7F1 /* DXIDCardCamera.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DXIDCardCamera.bundle; sourceTree = "<group>"; };
 		41D8AEF12410015D00E2C7F1 /* DXIDCardCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXIDCardCameraController.swift; sourceTree = "<group>"; };
+		420628592693F5C3004DBEB9 /* ScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		4206285B2693F5CE004DBEB9 /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		4206285C2693F5CE004DBEB9 /* UIViewController+ScanExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ScanExtensions.swift"; sourceTree = "<group>"; };
+		4206285D2693F5CE004DBEB9 /* CornerLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerLocation.swift; sourceTree = "<group>"; };
+		4206285E2693F5CF004DBEB9 /* ScanAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanAnimation.swift; sourceTree = "<group>"; };
+		420628602693F5CF004DBEB9 /* LimitsTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsTools.swift; sourceTree = "<group>"; };
+		420628612693F5CF004DBEB9 /* UIImage+ScanExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ScanExtensions.swift"; sourceTree = "<group>"; };
+		420628692693F5D6004DBEB9 /* AccessPhotoAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessPhotoAlbumViewController.swift; sourceTree = "<group>"; };
+		4206286A2693F5D6004DBEB9 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		4206286B2693F5D7004DBEB9 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		420628732693F5E1004DBEB9 /* QRCodeModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeModule.swift; sourceTree = "<group>"; };
+		42A2F3A826954E4700BCCC1A /* AVMetadataObject+ScanExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVMetadataObject+ScanExtensions.swift"; sourceTree = "<group>"; };
 		5A1117CE648646AF54B60476 /* Pods_ORSwiftSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORSwiftSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F10616607D2D5015E22CB97 /* Pods-ORSwiftSummaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ORSwiftSummaryUITests.debug.xcconfig"; path = "Target Support Files/Pods-ORSwiftSummaryUITests/Pods-ORSwiftSummaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F6B05B7DE4568C6ABAD7334 /* Pods_ORSwiftSummaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORSwiftSummaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,6 +331,18 @@
 				4141DDFC240775C300BEACBC /* KnowledgePointVC.swift */,
 				4141DDFD240775C300BEACBC /* NormalDemoVC.swift */,
 				412A4DE72662911500EFA515 /* TestVC.swift */,
+				420628732693F5E1004DBEB9 /* QRCodeModule.swift */,
+				420628592693F5C3004DBEB9 /* ScanView.swift */,
+				42A2F3A826954E4700BCCC1A /* AVMetadataObject+ScanExtensions.swift */,
+				4206285D2693F5CE004DBEB9 /* CornerLocation.swift */,
+				420628602693F5CF004DBEB9 /* LimitsTools.swift */,
+				4206285B2693F5CE004DBEB9 /* Platform.swift */,
+				4206285E2693F5CF004DBEB9 /* ScanAnimation.swift */,
+				420628612693F5CF004DBEB9 /* UIImage+ScanExtensions.swift */,
+				4206285C2693F5CE004DBEB9 /* UIViewController+ScanExtensions.swift */,
+				420628692693F5D6004DBEB9 /* AccessPhotoAlbumViewController.swift */,
+				4206286B2693F5D7004DBEB9 /* CameraViewController.swift */,
+				4206286A2693F5D6004DBEB9 /* ScannerViewController.swift */,
 			);
 			path = BasicVC;
 			sourceTree = "<group>";
@@ -769,6 +805,7 @@
 				41D8AEE82410015500E2C7F1 /* TakePictureVC.swift in Sources */,
 				41134D0C2554F2820013CB66 /* MultimediaPreviewView.swift in Sources */,
 				41D8AEEA2410015500E2C7F1 /* TakePhotoTool.swift in Sources */,
+				4206285A2693F5C3004DBEB9 /* ScanView.swift in Sources */,
 				418276052545850F00FC88E9 /* GyroMannager.swift in Sources */,
 				41134D102554F2DA0013CB66 /* ImageMediaPreviewCell.swift in Sources */,
 				410A4A7726687A2E008BB530 /* NSObject+Extension.swift in Sources */,
@@ -776,6 +813,7 @@
 				412A4DE82662911500EFA515 /* TestVC.swift in Sources */,
 				41221792256F8C3C0051D393 /* main.swift in Sources */,
 				41D8AEE92410015500E2C7F1 /* TakeIDcardPhotoVC.swift in Sources */,
+				420628632693F5CF004DBEB9 /* UIViewController+ScanExtensions.swift in Sources */,
 				411623FA243081E600832DBD /* GCDSemaphoreVC.swift in Sources */,
 				4141DE1D2407783400BEACBC /* AppDelegate.swift in Sources */,
 				419BE3E826146334008101DB /* RecursiveLockVC.swift in Sources */,
@@ -789,11 +827,18 @@
 				416043602612C58900BB65C7 /* MutexLockVC.swift in Sources */,
 				41D8AEF42410015D00E2C7F1 /* DXIDCardFloatingView.swift in Sources */,
 				416043682612C5A900BB65C7 /* RWLockVC.swift in Sources */,
+				4206286C2693F5D7004DBEB9 /* AccessPhotoAlbumViewController.swift in Sources */,
+				420628792693F5E1004DBEB9 /* QRCodeModule.swift in Sources */,
 				4141DE142407768300BEACBC /* ClipImageTool.swift in Sources */,
 				41D8AEF72410015D00E2C7F1 /* DXIDCardCameraController.swift in Sources */,
 				4141DE132407768300BEACBC /* ClipImageShowVC.swift in Sources */,
+				420628642693F5CF004DBEB9 /* CornerLocation.swift in Sources */,
+				420628672693F5CF004DBEB9 /* LimitsTools.swift in Sources */,
+				420628682693F5CF004DBEB9 /* UIImage+ScanExtensions.swift in Sources */,
 				4184618324CA8AD000B689D2 /* RxSwiftVC.swift in Sources */,
 				41D8AEF52410015D00E2C7F1 /* UIImage+FixOrientation.swift in Sources */,
+				42A2F3A926954E4700BCCC1A /* AVMetadataObject+ScanExtensions.swift in Sources */,
+				420628652693F5CF004DBEB9 /* ScanAnimation.swift in Sources */,
 				418276062545850F00FC88E9 /* GyroscopeImageView.swift in Sources */,
 				41444D4F25FB787600035032 /* BaseURL.swift in Sources */,
 				4141DDFF240775C300BEACBC /* NormalDemoVC.swift in Sources */,
@@ -805,6 +850,7 @@
 				41D8AEF22410015D00E2C7F1 /* TakeIDcardPhotoTwoVC.swift in Sources */,
 				416043702612C5D300BB65C7 /* SemaphoreLockVC.swift in Sources */,
 				41471ACE2570B011005286FD /* KeyChainVC.swift in Sources */,
+				4206286D2693F5D7004DBEB9 /* ScannerViewController.swift in Sources */,
 				41CA97FC24F7A7F2009B6473 /* BlockVC.swift in Sources */,
 				416043752612CB6800BB65C7 /* MutexLockOCVC.m in Sources */,
 				412F5EED2643903C00F77C6D /* CABasicAnimationVC.swift in Sources */,
@@ -813,8 +859,10 @@
 				41170612253D2DC0001FAE89 /* CoreMotionVC.swift in Sources */,
 				4104BD7625650D32000A2D68 /* CustomPushedVC.swift in Sources */,
 				41185499256B8F53009FB5D1 /* CustomPush.swift in Sources */,
+				420628622693F5CF004DBEB9 /* Platform.swift in Sources */,
 				41353D9A256DF641008182BE /* AnimationVC.swift in Sources */,
 				410938D824C3318600CD1C22 /* PopoverViewVC.swift in Sources */,
+				4206286E2693F5D7004DBEB9 /* CameraViewController.swift in Sources */,
 				4141DE0A2407766F00BEACBC /* AutoHeightTextViewCell.swift in Sources */,
 				41444D5125FB787600035032 /* ResultView+Extension.swift in Sources */,
 			);

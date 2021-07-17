@@ -27,7 +27,6 @@ class TestVC: UIViewController {
         self.view.addSubview(oneView)
         
         
-        
         twoView.backgroundColor = .yellow
         self.view.addSubview(twoView)
         
@@ -41,14 +40,16 @@ class TestVC: UIViewController {
     
     @objc func pushVC(btn : UIButton) {
         print("ssss----------------")
-        commmomView.backgroundColor = .blue
-        if index == 0 {
-            index = 1
-            twoView.addSubview(commmomView)
-        }else {
-            index = 0
-            oneView.addSubview(commmomView)
-        }
+//        commmomView.backgroundColor = .blue
+//        if index == 0 {
+//            index = 1
+//            twoView.addSubview(commmomView)
+//        }else {
+//            index = 0
+//            oneView.addSubview(commmomView)
+//        }
+        
+        QRCodeModule().show(controller: self)
     }
     
     
